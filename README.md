@@ -12,7 +12,6 @@ Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
 # Goals & TODO
 * Gather ressources for GTA V script and game understanding
-* Put all decompiled scripts for 1.27
 * Improve ImGTA mod -> Debug mod
 
 # General information
