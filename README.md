@@ -69,6 +69,9 @@ Native Hash updater: https://www.gta5-mods.com/tools/native-hash-updater-w-idc-g
 Hash Collider (joaat): https://www.gta5-mods.com/tools/hash-collider-0-4-1<br />
 joaat encoder online: https://md5calc.com/hash/joaat<br />
 joaat wiki: https://en.wikipedia.org/wiki/Jenkins_hash_function<br />
+Hex/decimal conversion: https://www.rapidtables.com/convert/number/hex-to-decimal.html<br />
+Hex/float conversion: https://gregstoll.com/~gregstoll/floattohex/<br />
+Hex calculator: https://www.calculator.net/hex-calculator.html<br />
 
 ## Communities
 https://www.speedrun.com/gtav (discord link, forum)<br />
