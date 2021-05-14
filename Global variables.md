@@ -1,3 +1,5 @@
+The best is to use the ImGTA mod to check all these in game!
+
 # Global variables for the version 372
 There are a bunch of global variables that are easily accesible and can provide useful information, this file lists addresses to some variables that could be useful.
 You can find the matching address for another game version if you decompile it and compare with this version (compare two scripts that use it).
