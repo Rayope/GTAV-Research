@@ -1,5 +1,8 @@
+In development...
+
 # GTA V Research
 GTA V Scripts Documentation and 'Game Research' for speedrunning the game offline.<br />
+It should help anyone getting started in understanding the inner workings of the game...Hopefully<br />
 The PC version used for research is GTA V 1.27 (build 372).
 
 # Repository information
@@ -31,7 +34,14 @@ A lot of hashes have already been found, have a look at native databases in 'Res
 You can bruteforce jooat hash (32-bit!) with the tool "Hash Collider", link in 'Ressources'.
 It will find multiple matching strings for your hash... which is normal because the algorithm can return the same output from two (or more) different inputs which means that if you find one matching string, you'll never be 100% sure it is the original one, but you be confident if the meaning matches the context where your native is called. 
 
+# Mod information
+The main possibility for modding the game is making .api files.<br />
+ScriptHookV allows for loading your mod.<br />
+ScriptHookVDotNet allows for making mods with .NET.<br />
 
+# Cheat engine
+Cheat engine is a program that attaches to GTA V -- any program really --, it is used for watching the program memory and interacting with it.<br />
+I used it for looking at specific value within GTA V, like "Franklin", or a value that you want to know the location within the game...
 
 # Useful Links
 ## Repositories
