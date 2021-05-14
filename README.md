@@ -1,4 +1,4 @@
-In development...
+In development... it's going to be messy for a few days probably
 
 # GTA V Script Documentation and 'Game Research'
 The main goal is for finding new speedrunning strategies and understanding them better.
