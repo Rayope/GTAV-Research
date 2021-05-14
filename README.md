@@ -11,7 +11,7 @@ The research is made to understand and research speedrunning strategies. It can 
 Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
 # Goals & TODO
-* Gather ressources for GTA V script and game understanding
+* Gather all ressources I use for GTA V script and game understanding
 * Improve ImGTA mod -> Debug mod
 
 # General information
