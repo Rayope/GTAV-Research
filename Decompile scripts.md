@@ -13,5 +13,6 @@
 10. Make a folder named "GTA V Scripts" and put these files in it (from step 9)
 11. Put the output of GTA-V-Script-Decompiler/bin/Release in this folder as well
 12. Download php (https://windows.php.net/download/)
-13. Run [path_to_your_php_folder]/php.exe bulk_decompile.php
-14. Enjoy!
+13. Edit config.ini as needed for output options
+14. Run [path_to_your_php_folder]/php.exe bulk_decompile.php
+15. Enjoy!
