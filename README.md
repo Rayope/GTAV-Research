@@ -50,6 +50,7 @@ Script Decompiler: https://github.com/njames93/GTA-V-Script-Decompiler<br />
 Decompiled scripts for last version: https://github.com/Sainan/GTA-V-Decompiled-Scripts<br />
 ScriptHookVDotNet: https://github.com/crosire/scripthookvdotnet<br />
 Native Hash updater: https://github.com/indilo53/NativeHashUpdater<br />
+Other names joaat hash: https://github.com/Sainan/gta-v-joaat-hash-db<br />
 
 ## Ressources
 Interactive map with (x,y) marker: https://gtagmodding.com/maps/gta5/<br />
