@@ -8,12 +8,12 @@ The PC version used for research is GTA V 1.27 (build 372).
 # Repository information
 This is a repository used for putting together what I have found on the net and what I understand of GTA V.<br />
 The research is made to understand and research speedrunning strategies. It can help anyone wanting to do the same, as I found that information is very scattered over the net.<br />
-Hopefully nothing wrong is written... If you think so, please tell me!
+Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
 # Goals & TODO
 * Gather ressources for GTA V script and game understanding
 * Put all decompiled scripts for 1.27
-* Improve ImGTA mod -> Debug mod 
+* Improve ImGTA mod -> Debug mod
 
 # General information
 OpenIV allows you to extract some game files from the game folder on your computer: scripts, sounds, animations, models, audio files.<br /><br />
@@ -67,3 +67,8 @@ Native Hash updater: https://www.gta5-mods.com/tools/native-hash-updater-w-idc-g
 Hash Collider (joaat): https://www.gta5-mods.com/tools/hash-collider-0-4-1<br />
 joaat encoder online: https://md5calc.com/hash/joaat<br />
 joaat wiki: https://en.wikipedia.org/wiki/Jenkins_hash_function<br />
+
+## Communities
+https://www.speedrun.com/gtav (discord link, forum)<br />
+https://forums.gta5-mods.com/<br />
+https://gtaforums.com/forum/371-documentation/<br />
