@@ -54,8 +54,9 @@ Other names joaat hash: https://github.com/Sainan/gta-v-joaat-hash-db<br />
 
 ## Ressources
 Interactive map with (x,y) marker: https://gtagmodding.com/maps/gta5/<br />
-NativeDB 1: http://www.dev-c.com/nativedb/<br />
-NativeDB 2: https://alloc8or.re/gta5/nativedb/<br />
+Native DB 1: http://www.dev-c.com/nativedb/<br />
+Native DB 2: https://alloc8or.re/gta5/nativedb/<br />
+Native DB 3: https://www.lcpdfr.com/resources/nativedb/index/system/<br />
 FiveM natives: https://docs.fivem.net/docs/<br />
 FiveM docs: https://docs.fivem.net/natives/<br />
 ScriptHookV: http://www.dev-c.com/gtav/scripthookv/<br />
