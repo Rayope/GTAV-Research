@@ -1,2 +1,52 @@
-# GTAV-Research
-GTAV Scripts Information
+# GTA V Research
+GTA V Scripts Documentation and 'Game Research' for speedrunning the game offline.<br />
+The PC version used for research is GTA V 1.27 (build 372).
+
+# Repository information
+This is a repository used for putting together what I have found on the net and what I understand of GTA V.<br />
+The research is made to understand and research speedrunning strategies. It can help anyone wanting to do the same, as I found that information is very scattered over the net.<br />
+Hopefully nothing wrong is written... If you think so, please tell me!
+
+# General information
+OpenIV allows you to extract some game files from the game folder on your computer: scripts, sounds, animations, models, audio files.<br /><br />
+A script decompiler allows you to transform the script extracted from openIV (two files: [script_name].ysc.full, [script_name].ysc.sys) from binary data (assembly) to a source file (language .NET probably) that you can read.<br />
+During this transformation the decompiler can translate some variable and function names from a hash to the readable name if it knows the corresponding name. The function names are called natives.<br /><br />
+Native hashes are not the same for every version of the game. But, we somehow have the corresponding hashes for every version (look at native hash update repository below).<br />
+The version of the game is the build number that you see in the bottom right corner when you start the game.<br />
+The speedrunning community has chosen the version 372 -- which corresponds to the PC version GTA V 1.27 -- because it is faster than other versions (load times, no wave, and maybe more).<br />
+
+# Hash information
+I could be wrong here, but from what I read on forums, discord and whatnot, here is what I understand:<br /><br />
+Note: A hash function converts one value to another. For instance, the joaat hash algorithm: jooat("my_function_name") = 0xD62711A5<br /><br />
+The original game version (XBox version), build number 331, had hashes computed using Jenkins one-at-a-time (joaat) algorithm, which outputs a 32-bit hash (e.g., 0xD6 27 11 A5). Then, the other versions used another algorithm (unknown as far as I know) that outputs a 64-bit hash (e.g., 0xD5 B9 60 AA 31 EA F4 08).<br />
+Somehow, people made lists with corresponding hashes between each version, so that from whatever version of the game you have a hash, you can match it with the original 32-bit hash from the XBox version. And the name corresponding to that 32-bit hash can be found by bruteforcing it with the joaat algorithm.<br />
+A lot of hashes have already been found, have a look at native databases in 'Ressources' below.
+
+# Jenkins one-at-a-time (joaat) algorithm
+You can bruteforce jooat hash (32-bit!) with the tool "Hash Collider", link in 'Ressources'.
+It will find multiple matching strings for your hash... which is normal because the algorithm can return the same output from two (or more) different inputs which means that if you find one matching string, you'll never be 100% sure it is the original one, but you be confident if the meaning matches the context where your native is called. 
+
+
+
+# Useful Links
+## Repositories
+GTA V Mod to help debugging: https://github.com/drunderscore/ImGTA<br />
+Script Decompiler: https://github.com/njames93/GTA-V-Script-Decompiler<br />
+Decompiled scripts for last version: https://github.com/Sainan/GTA-V-Decompiled-Scripts<br />
+ScriptHookVDotNet: https://github.com/crosire/scripthookvdotnet<br />
+Native Hash updater: https://github.com/indilo53/NativeHashUpdater<br />
+
+## Ressources
+Interactive map with (x,y) marker: https://gtagmodding.com/maps/gta5/<br />
+NativeDB 1: http://www.dev-c.com/nativedb/<br />
+NativeDB 2: https://alloc8or.re/gta5/nativedb/<br />
+FiveM natives: https://docs.fivem.net/docs/<br />
+FiveM docs: https://docs.fivem.net/natives/<br />
+ScriptHookV: http://www.dev-c.com/gtav/scripthookv/<br />
+Alexander Blade research: https://gtaforums.com/topic/717612-v-scriptnative-documentation-and-research/<br />
+Dr. Undersccore research: https://github.com/drunderscore/GTA-Research<br />
+OpenIV: https://openiv.com/<br />
+Cheat engine: https://www.cheatengine.org/<br />
+Jenkins one-at-a-time: https://en.wikipedia.org/wiki/Jenkins_hash_function<br />
+Native Hash updater: https://www.gta5-mods.com/tools/native-hash-updater-w-idc-generator#comments_tab<br />
+Hash Collider (joaat): https://www.gta5-mods.com/tools/hash-collider-0-4-1<br />
