@@ -1,7 +1,6 @@
 In development...
 
-# GTA V Research
-GTA V Scripts Documentation and 'Game Research' for speedrunning the game offline.<br />
+# GTA V Script Documentation and 'Game Research' for speedrunning the game offline
 It should help anyone getting started in understanding the inner workings of the game...Hopefully<br />
 The PC version used for research is GTA V 1.27 (build 372).
 
