@@ -1,6 +1,7 @@
 In development...
 
-# GTA V Script Documentation and 'Game Research' for speedrunning the game offline
+# GTA V Script Documentation and 'Game Research'
+The main goal is for finding new speedrunning strategies and understanding them better.
 It should help anyone getting started in understanding the inner workings of the game...Hopefully<br />
 The PC version used for research is GTA V 1.27 (build 372).
 
