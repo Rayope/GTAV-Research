@@ -4,9 +4,10 @@ You can find the matching address for another game version if you decompile it a
 
 # List of potentially useful addresses:
 
-* Audio name: 0x3BCCF
-* Audio source: 0x3D92
-* Dialogue state: 0x3D4C
-* Mission state: 0x15F6A
-* Death name: 0x10B7D
+* Audio name (string): 0x3BCCF
+* Audio source (string): 0x3D92
+* Dialogue state (int): 0x3D4C
+* Mission state (int): 0x15F6A
+* Death name (string): 0x10B7D
 * Player switch locations array (guess): 0x14D9D
+    Each element has two location (x,y,z) that match some switches
