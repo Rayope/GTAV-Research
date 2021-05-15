@@ -1,0 +1,750 @@
+# Controllers
+## Main
+autosave_controller
+code_controller
+context_controller
+mission_repeat_controller
+controller_ambientarea
+controller_races
+controller_taxi
+controller_towing
+controller_trafficking
+
+## Communications
+comms_controller
+cellphone_controller
+email_controller
+social_controller
+friends_controller
+
+event_controller
+animal_controller
+blip_controller
+building_controller
+candidate_controller
+completionpercentage_controller
+country_race_controller
+drunk_controller
+floating_help_controller
+flow_controller
+pickup_controller
+player_controller
+player_controller_b
+rampage_controller
+randomchar_controller
+replay_controller
+respawn_controller
+shop_controller
+stats_controller
+stock_controller
+vehicle_gen_controller
+cheat_controller
+achievement_controller
+bootycall_debug_controller
+friends_debug_controller
+
+# Objects
+ob_abatdoor
+ob_abattoircut
+ob_airdancer
+ob_bong
+ob_cashregister
+ob_drinking_shots
+ob_foundry_cauldron
+ob_franklin_beer
+ob_franklin_tv
+ob_franklin_wine
+ob_huffing_gas
+ob_mp_bed_high
+ob_mp_bed_low
+ob_mp_bed_med
+ob_mp_shower_med
+ob_mp_stripper
+ob_mr_raspberry_jam
+ob_poledancer
+ob_sofa_franklin
+ob_sofa_michael
+ob_telescope
+ob_tv
+ob_vend1
+ob_vend2
+ob_wheatgrass
+
+# Launchers
+launcher_abigail
+launcher_barry
+launcher_basejumpheli
+launcher_basejumppack
+launcher_carwash
+launcher_darts
+launcher_dreyfuss
+launcher_epsilon
+launcher_extreme
+launcher_fanatic
+launcher_golf
+launcher_hao
+launcher_hunting_ambient
+launcher_hunting
+launcher_josh
+launcher_maude
+launcher_minute
+launcher_mrsphilips
+launcher_nigel
+launcher_offroadracing
+launcher_omega
+launcher_paparazzo
+launcher_pilotschool
+launcher_racing
+launcher_rampage
+launcher_range
+launcher_stunts
+launcher_tennis
+launcher_thelastone
+launcher_tonya
+launcher_triathlon
+launcher_yoga
+
+# Multiplayer
+mp_awards
+mp_fm_registration
+mp_menuped
+mp_prop_global_block
+mp_registration
+mp_save_game_global_block
+mp_unlocks
+mp_weapons
+mpstatsinit
+mptestbed
+am_airstrike
+am_ammo_drop
+am_armwrestling
+am_armybase
+am_backup_heli
+am_boat_taxi
+am_bru_box
+am_car_mod_tut
+am_contact_requests
+am_cr_securityvan
+am_crate_drop
+am_darts
+am_destroy_veh
+am_distract_cops
+am_doors
+am_ferriswheel
+am_ga_pickups
+am_gang_call
+am_heist_int
+am_heli_taxi
+am_hold_up
+am_imp_exp
+am_joyrider
+am_launcher
+am_lester_cut
+am_mission_launch
+am_mp_carwash_launch
+am_mp_garage_control
+am_mp_property_ext
+am_mp_property_int
+am_npc_invites
+am_pi_menu
+am_plane_takedown
+am_prison
+am_prostitute
+am_rollercoaster
+am_rontrevor_cut
+am_taxi
+am_vehicle_spawn
+fm_bj_race_controler
+fm_capture_creator
+fm_deathmatch_controler
+fm_deathmatch_creator
+fm_hideout_controler
+fm_hold_up_tut
+fm_horde_controler
+fm_impromptu_dm_controler
+fm_intro_cut_dev
+fm_intro
+fm_lts_creator
+fm_main_menu
+fm_maintain_cloud_header_data
+fm_maintain_transition_players
+fm_mission_controller
+fm_mission_creator
+fm_race_controler
+fm_race_creator
+
+# Missions
+prologue1 = Prologue
+armenian1 = Franklin & Lamar
+armenian2 = Repossesion
+armenian3 = Complications
+family1 = Father and Son
+family1taxi
+family2 = Daddy's Little Girl
+family3 = Marriage Counseling
+family4 = Fame or Shame
+family5 = Did Somebody Say Yoga?
+family6 = Reuniting the Family
+lester1 = Friend Request
+jewelry_setup1 = Casing the Jewel Store
+jewelry_prep1a
+jewelry_prep1b = Carbine Rifles
+jewelry_prep2a
+jewelry_heist = The Jewel Store Job
+lamar1 = The Long Stretch
+trevor1 = Mr. Philips
+trevor2 = Nervous Ron
+trevor3 = Friends Reunited
+trevor4 = Hang Ten
+chinese1 = Trevor Philips Industries
+chinese2 = Crystal Maze
+franklin0 = Chop
+franklin1 = Hood Safari
+franklin2 = Lamar Down
+fbi1 = Dead Man Walking
+fbi2 = Three's Company
+fbi3 = By The Book
+fbi4_intro = Blitz Play Intro
+fbi4_prep1 = Garbage Truck
+fbi4_prep2 = Tow Truck
+fbi4_prep3
+fbi4_prep3amb
+fbi4_prep4 = Masks
+fbi4_prep5 = Boiler Suits
+fbi4 = Blitz Play Heist
+fbi5a = Monkey Business
+docks_setup = Scouting the Port
+docks_prep1 = Minisub
+docks_prep2b
+docks_heista = Merryweather Heist - Part A
+docks_heistb = Merryweather Heist - Part B
+assassin_valet = Hotel Assasination
+carsteal1 = I Fought The Law
+carsteal2 = Eye in the Sky
+carsteal3 = Deep Inside
+carsteal4 = Pack Man
+martin1 = Caida Libre
+exile1 = Minor Turbulance
+exile2 = Predator
+exile3 = Derailed
+rural_bank_setup = Paleto Score Setup
+rural_bank_prep1 = Military Hardware
+rural_bank_heist = Paleto Score
+final_heist1 = Surveying the Score
+michael1 = Bury the Hatchet
+michael2 = Fresh Meat
+michael3 = The Wrap Up
+michael4 = Meltdown
+michael4leadout
+solomon1 = Mr. Richards
+solomon2 = Ballad of Rocco
+solomon3 = Legal Trouble
+agency_prep1
+agency_prep2amb
+agency_heist1 = Cleaning Out The Bureau
+finale_heist2_intro = Big Score Setup Intro
+agency_heist2 = Architect's Plans
+agency_heist3a = Bureau Raid - Part A
+agency_heist3b = Bureau Raid - Part B
+finale_heist_prepa = Stingers
+finale_heist_prepc = Gauntlet
+finale_heist2a = The Big One - Part A
+finale_heist2b = The Big One - Part B
+finale_intro = Ending Choice
+finalec1 = The Third Way - Part 1
+finalec2 = The Third Way - Part 2
+finalea = Something Sensible
+finaleb = The Time's Come
+finale_choice
+finale_credits
+finale_endgame
+finale_heist_prepb
+finale_heist_prepd
+finale_heist_prepeamb
+
+# Optional missions
+_drf1 = Chaos
+_drf2 = Evil
+_drf3 = Negativity
+_drf4 = Fucked Up
+_drf5 = Abandonment Issues
+
+# Freaks
+tonya1 = Pulling Favours
+tonya2 = Pulling Another Favour
+tonya3 = Pulling Favours Again
+tonya4 = Still Pulling Favours
+tonya5 = Pulling One Last Favour
+hao1 = Shift Work
+paparazzo1 = Paparazzo
+_paparazzo2 = Paparazzo - The Sex Tape
+_paparazzo3 = Paparazzo - The Partnership
+paparazzo3a = Paparazzo - The Meltdown
+_paparazzo3b = Paparazzo - The Highness
+paparazzo4 = Paparazzo - Reality Check
+omega1 = Far Out
+omega2 = The Final Frontier
+_barry1 = Grass Roots - Michael
+_barry2 = Grass Roots - Trevor
+_barry3 = Grass Roots - Franklin
+barry3a = Grass Roots - The Pickup
+_barry3c = Grass Roots - The Drag
+barry4 = Grass Roots - The Smoke-in
+_bailbond1 = Ralph Ostrowski
+_bailbond2 = Larry Tupper
+_bailbond3 = Glenn Scoville
+_bailbond4 = Curtis Weaver
+assassin_hooker = The Vice Assassination
+assassin_bus = The Bus Assassination
+assassin_multi = The Multi-Target Assassination
+assassin_construction = The Construction Assassination
+fanatic3 = Exercising Demons - Franklin
+dreyfuss1 = A Starlet in Vinewood
+_rampage1 = Rampage: Rednecks
+_rampage2 = Rampage: Vagos
+_rampage3 = Rampage: Ballas
+_rampage4 = Rampage: Military
+_rampage5 = Rampage: Hipsters
+_josh1 = Extra Commission
+_josh2 = Closing the Deal
+_josh3 = Surreal Estate
+_josh4 = Breach of Contract
+_epsilon1 = Seeking the Truth
+_epsilon2 = Accepting the Truth
+_epsilon3 = Assuming the Truth
+_epsilon4 = Chasing the Truth
+_epsilon5 = Bearing the Truth
+_epsilon6 = Delivering the Truth
+_epsilon7 = Exercising the Truth
+_epsilon8 = Unknowing the Truth
+epscars
+epsdesert
+epsilontract
+epsrobes
+_nigel1 = Nigel and Mrs. Thronhill
+_nigel1a = Vinewood Souvenirs - Kerry
+_nigel1b = Vinewood Souvenirs - Willie
+_nigel1c = Vinewood Souvenirs - Tyler
+_nigel1d = Vinewood Souvenirs - Mark
+_nigel2 = Vinewood Souvenirs - Al Di Napoli
+_nigel3 = Vinewood Souvenirs - The Last Act
+_abigail1 = Death at Sea
+_abigail2 = What Lies Beneath
+_fanatic1 = Exerccising Demons - Michael
+_fanatic2 = Exerccising Demons - Franklin
+_fanatic3 = Exerccising Demons - Trevor
+_extreme1 = Risk Assessment
+_extreme2 = Liquidity Risk
+_extreme3 = Targeted Risk
+_extreme4 = Uncalculated Risk
+_mrsphilips1 = Mrs. Philips
+_mrsphilips2 = Damaged Goods
+_minute1 = The Civil Border Patrol
+_minute2 = An American Welcome
+_minute3 = Uncalculated Risk
+
+
+
+# Hobbies
+golf = Golf
+tennis = Tennis
+triathlonsp = Triathlon (all of them I think?)
+darts = Darts
+yoga = Yoga
+traffick_air = Arms Trafficking Air
+traffick_ground = Arms Trafficking Ground
+
+# Player scenes
+player_scene_f_lamgraff
+player_scene_f_lamtaunt
+player_scene_f_taxi
+player_scene_ft_franklin1
+player_scene_m_cinema
+player_scene_m_fbi2
+player_scene_m_kids
+player_scene_m_shopping
+player_scene_mf_traffic
+player_scene_t_bbfight
+player_scene_t_chasecar
+player_scene_t_insult
+player_scene_t_park
+player_scene_t_tie
+
+# Phone apps
+appbroadcast
+appcamera
+appchecklist
+appcontacts
+appemail
+apphs_sleep
+appinternet
+appjipmp
+appmedia
+appmpemail
+appmpjoblistnew
+apporganiser
+apprepeatplay
+appsettings
+appsidetask
+apptextmessage
+apptrackify
+appvlsi
+appzit
+
+# Special peds
+gpb_andymoon = Andy Moon
+gpb_baygor = Baygor
+gpb_billbinder = Bill Binder
+gpb_clinton = Clinton
+gpb_griff = Griff
+gpb_jane = Jane
+gpb_jerome = Jerome
+gpb_jesse = Jesse / Jesus
+gpb_mani = Mani
+gpb_mime = Mimes
+gpb_pameladrake = Pamela Drake
+gpb_superhero = Impotent Rage Cosplayer
+gpb_tonya = Jesco White?
+gpb_zombie = Graham
+
+# Re ?
+re_abandonedcar
+re_accident
+re_armybase
+re_arrests
+re_atmrobbery
+re_bikethief
+re_border
+re_burials
+re_bus_tours
+re_cartheft
+re_chasethieves
+re_crashrescue
+re_cultshootout
+re_dealgonewrong
+re_domestic
+re_drunkdriver
+re_duel
+re_gang_intimidation
+re_gangfight
+re_getaway_driver
+re_hitch_lift
+re_homeland_security
+re_lossantosintl
+re_lured
+re_monkey
+re_mountdance
+re_muggings
+re_paparazzi
+re_prison
+re_prisonerlift
+re_prisonvanbreak
+re_rescuehostage
+re_seaplane
+re_securityvan
+re_shoprobbery
+re_snatched
+re_stag_do
+re_yetarian
+
+# Misc
+act_cinema
+af_intro_t_sandy
+altruist_cult
+ambient_diving
+ambient_mrsphilips
+ambient_solomon
+ambient_sonar
+ambient_tonya
+ambient_tonyacall2
+ambient_tonyacall5
+ambient_tonyacall
+ambient_ufos
+ambientblimp
+assassin_rankup
+atm_trigger
+bailbond_launcher
+benchmark
+bigwheel
+bj
+bootycallhandler
+buddydeathresponse
+bugstar_mission_export
+buildingsiteambience
+cablecar
+cam_coord_sender
+carmod_shop
+carwash1
+carwash2
+celebration_editor
+celebrations
+cellphone_flashhand
+charactergoals
+chop
+clothes_shop_mp
+clothes_shop_sp
+component_checker
+coordinate_recorder
+country_race
+creation_startup
+creator
+custom_config
+cutscenemetrics
+cutscenesamples
+debug_app_select_screen
+debug_launcher
+debug
+dialogue_handler
+director_mode
+docks2asubhandler
+drunk
+emergencycall
+emergencycalllauncher
+exile_city_denial
+fairgroundhub
+fake_interiors
+fame_or_shame_set
+fameorshame_eps_1
+fameorshame_eps
+family_scene_f0
+family_scene_f1
+family_scene_m
+family_scene_t0
+family_scene_t1
+flow_autoplay
+flow_help
+flowintrotitle
+flowstartaccept
+flyunderbridges
+fmmc_launcher
+fmmc_playlist_controller
+forsalesigns
+freemode_init
+freemode
+friendactivity
+golf_ai_foursome_putting
+golf_ai_foursome
+golf_mp
+gunclub_shop
+hairdo_shop_mp
+hairdo_shop_sp
+hao1
+heist_ctrl_agency
+heist_ctrl_docks
+heist_ctrl_finale
+heist_ctrl_jewel
+heist_ctrl_rural
+heli_gun
+heli_streaming
+hud_creator
+hunting1
+hunting2
+hunting_ambient
+idlewarper
+ingamehud
+initial
+laptop_trigger
+lesterhandler
+letterscraps
+liverecorder
+luxe_veh_activity
+magdemo2
+magdemo
+main_install
+main_persistent
+main
+maintransition
+maude1
+maude_postbailbond
+me_amanda1
+me_jimmy1
+me_tracey1
+mg_race_to_point
+minigame_ending_stinger
+minigame_stats_tracker
+mission_race
+mission_stat_alerter
+mission_stat_watcher
+mission_triggerer_a
+mission_triggerer_b
+mission_triggerer_c
+mission_triggerer_d
+murdermystery
+net_bot_brain
+net_bot_simplebrain
+net_cloud_mission_loader
+net_rank_tunable_loader
+net_tunable_check
+nodeviewer
+offroad_races
+paradise2
+paradise
+pausemenu_example
+pausemenu_map
+pausemenu_multiplayer
+pausemenu_sp_repeat
+pausemenu
+pb_busker
+pb_homeless
+pb_preacher
+pb_prostitute
+photographymonkey
+photographywildlife
+pi_menu
+pickupvehicles
+pilot_school_mp
+pilot_school
+placeholdermission
+player_timetable_scene
+playthrough_builder
+pm_defend
+pm_delivery
+pm_gang_attack
+pm_plane_promotion
+pm_recover_stolen
+postkilled_bailbond2
+postrc_barry1and2
+postrc_barry4
+postrc_epsilon4
+postrc_nigel3
+profiler_registration
+prop_drop
+range_modern_mp
+range_modern
+rerecord_recording
+restrictedareas
+rollercoaster
+save_anywhere
+savegame_bed
+sc_lb_global_block
+scaleformprofiling
+scene_builder
+sclub_front_bouncer
+script_metrics
+scripted_cam_editor
+scriptplayground
+sctv
+selector_example
+selector
+selling_short_1
+selling_short_2
+sh_intro_f_hills
+sh_intro_m_home
+shooting_camera
+shoprobberies
+shot_bikejump
+shrinkletter
+sp_dlc_registration
+sp_editor_mission_instance
+sp_menuped
+sp_pilotschool_reg
+spaceshipparts
+spawn_activities
+speech_reverb_tracker
+spmc_instancer
+spmc_preloader
+standard_global_init
+standard_global_reg
+startup_install
+startup_positioning
+startup
+streaming
+stripclub_drinking
+stripclub_mp
+stripclub
+stripperhome
+stunt_plane_races
+tasklist_1
+tattoo_shop
+taxi_clowncar
+taxi_cutyouin
+taxi_deadline
+taxi_followcar
+taxi_gotyounow
+taxi_gotyourback
+taxi_needexcitement
+taxi_procedural
+taxi_takeiteasy
+taxi_taketobest
+taxilauncher
+taxiservice
+taxitutorial
+tempalpha
+tennis_ambient
+tennis_family
+tennis_network_mp
+thelastone
+timershud
+title_update_registration
+towing
+traffickingsettings
+traffickingteleport
+train_create_widget
+tunables_registration
+tuneables_processing
+ufo
+ugc_global_registration
+underwaterpickups
+utvc
+valentinerpreward2
+veh_play_widget
+vehicle_force_widget
+vehicle_plate
+walking_ped
+wardrobe_mp
+wardrobe_sp
+weapon_audio_widget
+wp_partyboombox
+xml_menus
+
+# Tests
+aicover_test
+ainewengland_test
+vehicle_ai_test
+temptest
+scaleformtest
+scaleformgraphictest
+scaleformminigametest
+racetest
+placementtest
+planewarptest
+pickuptest
+physics_perf_test
+physics_perf_test_launcher
+locates_tester
+line_activation_test
+heatmap_test_flow
+heatmap_test
+gunfighttest
+general_test
+game_server_test
+fullmap_test_flow
+fullmap_test
+density_test
+cutscene_test
+combat_test
+audiotest
+charanimtest
+blimptest
+camera_test
+car_roof_test
+startup_locationtest
+fps_test_mag
+fps_test
+gtest_airplane
+gtest_avoidance
+gtest_boat
+gtest_divingfromcar
+gtest_divingfromcarwhilefleeing
+gtest_helicopter
+gtest_nearlymissedbycar
+headertest
+navmeshtest
+net_combat_soaktest
+net_jacking_soaktest
+net_session_soaktest
+smoketest
+startup_smoketest
+test_startup
+train_tester
+dynamixtest
