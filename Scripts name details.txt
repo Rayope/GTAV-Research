@@ -95,6 +95,13 @@ _drf2 = Evil
 _drf3 = Negativity
 _drf4 = Fucked Up
 _drf5 = Abandonment Issues
+hao1 - Shift Work
+murdermystery - Murder Mystery
+_me_amanda1 - The Good Husband
+_me_jimmy1 - Parenting 101
+_me_tracey1 - Doting Dad
+selling_short_1
+selling_short_2
 
 # Freaks
 tonya1 = Pulling Favours
@@ -117,6 +124,7 @@ _barry3 = Grass Roots - Franklin
 barry3a = Grass Roots - The Pickup
 _barry3c = Grass Roots - The Drag
 barry4 = Grass Roots - The Smoke-in
+maude1
 _bailbond1 = Ralph Ostrowski
 _bailbond2 = Larry Tupper
 _bailbond3 = Glenn Scoville
@@ -176,6 +184,7 @@ thelastone = The Last One
 # Hobbies
 golf = Golf
 tennis = Tennis
+tennis_family
 triathlonsp = Triathlon (all of them I think?)
 darts = Darts
 yoga = Yoga
@@ -185,6 +194,13 @@ bj = Basejump
 stunt_plane_races
 offroad_races
 country_race
+chop
+friendactivity
+stripclub_drinking
+stripclub
+stripperhome
+golf_ai_foursome_putting
+golf_ai_foursome
 
 # Controllers
 ## Main
@@ -258,6 +274,19 @@ ob_tv
 ob_vend1
 ob_vend2
 ob_wheatgrass
+atm_trigger
+bigwheel
+cablecar
+wp_partyboombox
+wardrobe_sp
+sctv
+utvc
+rollercoaster
+carwash1
+carwash2
+fairgroundhub
+forsalesigns
+laptop_trigger
 
 # Launchers
 launcher_abigail
@@ -292,6 +321,7 @@ launcher_thelastone
 launcher_tonya
 launcher_triathlon
 launcher_yoga
+bailbond_launcher
 
 # Multiplayer
 mp_awards
@@ -361,6 +391,13 @@ fm_mission_controller
 fm_mission_creator
 fm_race_controler
 fm_race_creator
+fmmc_launcher
+fmmc_playlist_controller
+net_bot_brain
+net_bot_simplebrain
+net_cloud_mission_loader
+net_rank_tunable_loader
+net_tunable_check
 clothes_shop_mp
 wardrobe_mp
 tennis_network_mp
@@ -369,6 +406,10 @@ range_modern_mp
 pilot_school_mp
 golf_mp
 hairdo_shop_mp
+tunables_registration
+tuneables_processing
+celebration_editor
+celebrations
 
 # Player scenes
 player_scene_f_lamgraff
@@ -385,6 +426,12 @@ player_scene_t_chasecar
 player_scene_t_insult
 player_scene_t_park
 player_scene_t_tie
+family_scene_f0
+family_scene_f1
+family_scene_m
+family_scene_t0
+family_scene_t1
+player_timetable_scene
 
 # Phone apps
 appbroadcast
@@ -422,6 +469,11 @@ gpb_pameladrake = Pamela Drake
 gpb_superhero = Impotent Rage Cosplayer
 gpb_tonya = Jesco White?
 gpb_zombie = Graham
+pb_busker = Busker
+pb_homeless = Homeless
+pb_preacher = Preacher
+pb_prostitute = Prostiture
+sclub_front_bouncer = Stripclub Front Bouncer
 
 # Ambient missions (No mission-like start/stop, done in freemode)
 ambient_diving
@@ -476,6 +528,11 @@ re_shoprobbery
 re_snatched
 re_stag_do
 re_yetarian
+pm_defend
+pm_delivery
+pm_gang_attack
+pm_plane_promotion
+pm_recover_stolen
 
 # Shops
 gunclub_shop
@@ -487,7 +544,11 @@ tattoo_shop
 # Mods (Not in original game)
 control_thread
 
-# Misc
+# Misc (Lots of script files here are empty)
+main
+main_install
+main_persistent
+maintransition
 benchmark
 cutscenemetrics
 cutscenesamples
@@ -497,181 +558,59 @@ custom_config
 debug_app_select_screen
 debug_launcher
 debug
-main_install
-main_persistent
-main
-maintransition
 speech_reverb_tracker
 valentinerpreward2
 xml_menus
-
-# Unclassed
-act_cinema
-af_intro_t_sandy
-altruist_cult
-assassin_rankup
-atm_trigger
-bailbond_launcher
-bigwheel
-bootycallhandler
-buddydeathresponse
-bugstar_mission_export
-buildingsiteambience
-cablecar
 cam_coord_sender
-carwash1
-carwash2
-celebration_editor
-celebrations
-cellphone_flashhand
-charactergoals
-chop
 coordinate_recorder
-creation_startup
-creator
-dialogue_handler
-director_mode
-docks2asubhandler
-drunk
-emergencycall
-emergencycalllauncher
-exile_city_denial
-fairgroundhub
-fake_interiors
-fame_or_shame_set
-fameorshame_eps_1
-fameorshame_eps
-family_scene_f0
-family_scene_f1
-family_scene_m
-family_scene_t0
-family_scene_t1
-flow_autoplay
-flow_help
-flowintrotitle
-flowstartaccept
-flyunderbridges
-fmmc_launcher
-fmmc_playlist_controller
-forsalesigns
-freemode_init
-freemode
-friendactivity
-golf_ai_foursome_putting
-golf_ai_foursome
-hao1
-heist_ctrl_agency
-heist_ctrl_docks
-heist_ctrl_finale
-heist_ctrl_jewel
-heist_ctrl_rural
-heli_gun
-heli_streaming
-hud_creator
-idlewarper
-ingamehud
-initial
-laptop_trigger
-lesterhandler
-letterscraps
-liverecorder
-luxe_veh_activity
-magdemo2
-magdemo
-maude1
-maude_postbailbond
-me_amanda1
-me_jimmy1
-me_tracey1
-mg_race_to_point
-minigame_ending_stinger
-minigame_stats_tracker
-mission_race
-mission_stat_alerter
-mission_stat_watcher
-mission_triggerer_a
-mission_triggerer_b
-mission_triggerer_c
-mission_triggerer_d
-murdermystery
-net_bot_brain
-net_bot_simplebrain
-net_cloud_mission_loader
-net_rank_tunable_loader
-net_tunable_check
-paradise2
-paradise
 pausemenu_example
 pausemenu_map
 pausemenu_multiplayer
 pausemenu_sp_repeat
 pausemenu
-pb_busker
-pb_homeless
-pb_preacher
-pb_prostitute
-pm_defend
-pm_delivery
-pm_gang_attack
-pm_plane_promotion
-pm_recover_stolen
-photographymonkey
-photographywildlife
-pi_menu
-pickupvehicles
-placeholdermission
-player_timetable_scene
-playthrough_builder
-postkilled_bailbond2
-postrc_barry1and2
-postrc_barry4
-postrc_epsilon4
-postrc_nigel3
+tempalpha
+scene_builder
+script_metrics
+title_update_registration
+ugc_global_registration
+streaming
+flow_autoplay
+scaleformprofiling
+hud_creator
+idlewarper
+magdemo2
+magdemo
 profiler_registration
 prop_drop
-pilot_school
-range_modern
 rerecord_recording
-restrictedareas
-rollercoaster
-save_anywhere
-savegame_bed
-sc_lb_global_block
-scaleformprofiling
-scene_builder
-sclub_front_bouncer
-script_metrics
-scripted_cam_editor
-scriptplayground
-sctv
-selector_example
-selector
-selling_short_1
-selling_short_2
-sh_intro_f_hills
-sh_intro_m_home
-shooting_camera
-shoprobberies
+veh_play_widget
+vehicle_force_widget
+vehicle_plate
+walking_ped
+weapon_audio_widget
 shot_bikejump
-shrinkletter
+heli_streaming
 sp_dlc_registration
 sp_editor_mission_instance
-sp_menuped
-sp_pilotschool_reg
+
+
+# Unclassed
+cellphone_flashhand
+dialogue_handler
+bootycallhandler
+flyunderbridges
+letterscraps
 spaceshipparts
+shrinkletter
+underwaterpickups
+freemode_init
+freemode
+lesterhandler
+ufo
+towing
 spawn_activities
-spmc_instancer
-spmc_preloader
-standard_global_init
-standard_global_reg
-startup_install
-startup_positioning
-startup
-streaming
-stripclub_drinking
-stripclub
-stripperhome
-tasklist_1
+emergencycall
+emergencycalllauncher
 taxi_clowncar
 taxi_cutyouin
 taxi_deadline
@@ -685,27 +624,88 @@ taxi_taketobest
 taxilauncher
 taxiservice
 taxitutorial
-tempalpha
-tennis_family
+act_cinema
+altruist_cult
+assassin_rankup
+charactergoals
+buddydeathresponse
+af_intro_t_sandy
+bugstar_mission_export
+buildingsiteambience
+creation_startup
+creator
+director_mode
+docks2asubhandler
+drunk
+exile_city_denial
+fake_interiors
+fame_or_shame_set
+fameorshame_eps_1
+fameorshame_eps
+flow_help
+flowintrotitle
+flowstartaccept
+heist_ctrl_agency
+heist_ctrl_docks
+heist_ctrl_finale
+heist_ctrl_jewel
+heist_ctrl_rural
+heli_gun
+ingamehud
+initial
+liverecorder
+luxe_veh_activity
+maude_postbailbond
+mg_race_to_point
+minigame_ending_stinger
+minigame_stats_tracker
+mission_race
+mission_stat_alerter
+mission_stat_watcher
+mission_triggerer_a
+mission_triggerer_b
+mission_triggerer_c
+mission_triggerer_d
+paradise2
+paradise
+photographymonkey
+photographywildlife
+pi_menu
+pickupvehicles
+placeholdermission
+playthrough_builder
+postkilled_bailbond2
+postrc_barry1and2
+postrc_barry4
+postrc_epsilon4
+postrc_nigel3pilot_school
+range_modern
+restrictedareas
+save_anywhere
+savegame_bed
+sc_lb_global_block
+scripted_cam_editor
+scriptplayground
+selector_example
+selector
+_sh_intro_f_hills = Intro - Franklin Home
+_sh_intro_m_home = Intro - Michael Home
+shooting_camera
+shoprobberies
+sp_menuped
+sp_pilotschool_reg
+spmc_instancer
+spmc_preloader
+standard_global_init
+standard_global_reg
+startup_install
+startup_positioning
+startup
+tasklist_1
 timershud
-title_update_registration
-towing
 traffickingsettings
 traffickingteleport
 train_create_widget
-tunables_registration
-tuneables_processing
-ufo
-ugc_global_registration
-underwaterpickups
-utvc
-veh_play_widget
-vehicle_force_widget
-vehicle_plate
-walking_ped
-wardrobe_sp
-weapon_audio_widget
-wp_partyboombox
 
 # Tests
 aicover_test
