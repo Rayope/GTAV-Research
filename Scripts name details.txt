@@ -17,6 +17,7 @@ email_controller
 social_controller
 friends_controller
 
+## Others
 event_controller
 animal_controller
 blip_controller
