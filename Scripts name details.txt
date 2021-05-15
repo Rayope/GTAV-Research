@@ -157,9 +157,9 @@ _nigel2 = Vinewood Souvenirs - Al Di Napoli
 _nigel3 = Vinewood Souvenirs - The Last Act
 _abigail1 = Death at Sea
 _abigail2 = What Lies Beneath
-_fanatic1 = Exerccising Demons - Michael
-_fanatic2 = Exerccising Demons - Franklin
-_fanatic3 = Exerccising Demons - Trevor
+_fanatic1 = Exercising Demons - Michael
+_fanatic2 = Exercising Demons - Franklin
+_fanatic3 = Exercising Demons - Trevor
 _extreme1 = Risk Assessment
 _extreme2 = Liquidity Risk
 _extreme3 = Targeted Risk
@@ -169,6 +169,9 @@ _mrsphilips2 = Damaged Goods
 _minute1 = The Civil Border Patrol
 _minute2 = An American Welcome
 _minute3 = Uncalculated Risk
+_hunting1 = Target Practice
+_hunting2 = Fair Game
+thelastone = The Last One
 
 # Hobbies
 golf = Golf
@@ -178,6 +181,10 @@ darts = Darts
 yoga = Yoga
 traffick_air = Arms Trafficking Air
 traffick_ground = Arms Trafficking Ground
+bj = Basejump
+stunt_plane_races
+offroad_races
+country_race
 
 # Controllers
 ## Main
@@ -354,6 +361,14 @@ fm_mission_controller
 fm_mission_creator
 fm_race_controler
 fm_race_creator
+clothes_shop_mp
+wardrobe_mp
+tennis_network_mp
+stripclub_mp
+range_modern_mp
+pilot_school_mp
+golf_mp
+hairdo_shop_mp
 
 # Player scenes
 player_scene_f_lamgraff
@@ -408,7 +423,21 @@ gpb_superhero = Impotent Rage Cosplayer
 gpb_tonya = Jesco White?
 gpb_zombie = Graham
 
-# Re ?
+# Ambient missions (No mission-like start/stop, done in freemode)
+ambient_diving
+ambient_mrsphilips
+ambient_solomon
+ambient_sonar
+ambient_tonya
+ambient_tonyacall2
+ambient_tonyacall5
+ambient_tonyacall
+ambient_ufos
+ambientblimp
+tennis_ambient
+hunting_ambient
+
+# Random events
 re_abandonedcar
 re_accident
 re_armybase
@@ -448,33 +477,48 @@ re_snatched
 re_stag_do
 re_yetarian
 
+# Shops
+gunclub_shop
+clothes_shop_sp
+hairdo_shop_sp
+carmod_shop
+tattoo_shop
+
+# Mods (Not in original game)
+control_thread
+
 # Misc
+benchmark
+cutscenemetrics
+cutscenesamples
+nodeviewer
+component_checker
+custom_config
+debug_app_select_screen
+debug_launcher
+debug
+main_install
+main_persistent
+main
+maintransition
+speech_reverb_tracker
+valentinerpreward2
+xml_menus
+
+# Unclassed
 act_cinema
 af_intro_t_sandy
 altruist_cult
-ambient_diving
-ambient_mrsphilips
-ambient_solomon
-ambient_sonar
-ambient_tonya
-ambient_tonyacall2
-ambient_tonyacall5
-ambient_tonyacall
-ambient_ufos
-ambientblimp
 assassin_rankup
 atm_trigger
 bailbond_launcher
-benchmark
 bigwheel
-bj
 bootycallhandler
 buddydeathresponse
 bugstar_mission_export
 buildingsiteambience
 cablecar
 cam_coord_sender
-carmod_shop
 carwash1
 carwash2
 celebration_editor
@@ -482,19 +526,9 @@ celebrations
 cellphone_flashhand
 charactergoals
 chop
-clothes_shop_mp
-clothes_shop_sp
-component_checker
 coordinate_recorder
-country_race
 creation_startup
 creator
-custom_config
-cutscenemetrics
-cutscenesamples
-debug_app_select_screen
-debug_launcher
-debug
 dialogue_handler
 director_mode
 docks2asubhandler
@@ -525,10 +559,6 @@ freemode
 friendactivity
 golf_ai_foursome_putting
 golf_ai_foursome
-golf_mp
-gunclub_shop
-hairdo_shop_mp
-hairdo_shop_sp
 hao1
 heist_ctrl_agency
 heist_ctrl_docks
@@ -538,9 +568,6 @@ heist_ctrl_rural
 heli_gun
 heli_streaming
 hud_creator
-hunting1
-hunting2
-hunting_ambient
 idlewarper
 ingamehud
 initial
@@ -551,10 +578,6 @@ liverecorder
 luxe_veh_activity
 magdemo2
 magdemo
-main_install
-main_persistent
-main
-maintransition
 maude1
 maude_postbailbond
 me_amanda1
@@ -576,8 +599,6 @@ net_bot_simplebrain
 net_cloud_mission_loader
 net_rank_tunable_loader
 net_tunable_check
-nodeviewer
-offroad_races
 paradise2
 paradise
 pausemenu_example
@@ -589,20 +610,18 @@ pb_busker
 pb_homeless
 pb_preacher
 pb_prostitute
-photographymonkey
-photographywildlife
-pi_menu
-pickupvehicles
-pilot_school_mp
-pilot_school
-placeholdermission
-player_timetable_scene
-playthrough_builder
 pm_defend
 pm_delivery
 pm_gang_attack
 pm_plane_promotion
 pm_recover_stolen
+photographymonkey
+photographywildlife
+pi_menu
+pickupvehicles
+placeholdermission
+player_timetable_scene
+playthrough_builder
 postkilled_bailbond2
 postrc_barry1and2
 postrc_barry4
@@ -610,7 +629,7 @@ postrc_epsilon4
 postrc_nigel3
 profiler_registration
 prop_drop
-range_modern_mp
+pilot_school
 range_modern
 rerecord_recording
 restrictedareas
@@ -641,7 +660,6 @@ sp_menuped
 sp_pilotschool_reg
 spaceshipparts
 spawn_activities
-speech_reverb_tracker
 spmc_instancer
 spmc_preloader
 standard_global_init
@@ -651,12 +669,9 @@ startup_positioning
 startup
 streaming
 stripclub_drinking
-stripclub_mp
 stripclub
 stripperhome
-stunt_plane_races
 tasklist_1
-tattoo_shop
 taxi_clowncar
 taxi_cutyouin
 taxi_deadline
@@ -671,10 +686,7 @@ taxilauncher
 taxiservice
 taxitutorial
 tempalpha
-tennis_ambient
 tennis_family
-tennis_network_mp
-thelastone
 timershud
 title_update_registration
 towing
@@ -687,16 +699,13 @@ ufo
 ugc_global_registration
 underwaterpickups
 utvc
-valentinerpreward2
 veh_play_widget
 vehicle_force_widget
 vehicle_plate
 walking_ped
-wardrobe_mp
 wardrobe_sp
 weapon_audio_widget
 wp_partyboombox
-xml_menus
 
 # Tests
 aicover_test
