@@ -1,7 +1,7 @@
 ...Not finished, coarse outline for now...
 
 # Decompiling scripts for GTA V 1.27, build 377
-1. Download the latest natives.h (https://alloc8or.re/gta5/nativedb/, or http://www.dev-c.com/nativedb/)
+1. Download the latest "natives.h" and "natives.json" ("natives.h": https://alloc8or.re/gta5/nativedb/, "natives.json": https://github.com/alloc8or/gta5-nativedb-data, or both at http://www.dev-c.com/nativedb/)
 2. Download NativeHashUpdater (https://github.com/indilo53/NativeHashUpdater)
 3. Put "natives.h" and "natives.json" in the folder NativeHashUpdater/bin
 4. Put the file "MakeFilesFor372.bat" from this repo in the same folder
