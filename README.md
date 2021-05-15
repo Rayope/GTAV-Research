@@ -44,7 +44,7 @@ File structure:
 * **GTAV/[ScriptHookV_files]**: ScriptHookV files in GTA V folder
 * **GTAV/[ASI_mod.asi]**: .asi mods (made in C++) in GTA V folder
 * [optional] **GTAV/[ScriptHookVDotNet_files]**: ScriptHookVDotNet files in GTA V folder
-* [optional] **GTAV/scripts/[DLL_mod.dll]**: .dll mods (made in .NET) in a folder named "script" inside the GTA V folder
+* [optional] **GTAV/scripts/[DLL_mod.dll]**: .dll mods (made in .NET) in a folder named "scripts" inside the GTA V folder
 
 You can reload mods ingame with 'Ctrl-R'.<br />
 
