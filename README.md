@@ -1,4 +1,4 @@
-In development... it's going to be messy for a few days probably
+In development... it's going to be messy for a few days probably. Come back in a few days!
 
 # GTA V Script Documentation and 'Game Research'
 The main goal is for finding new speedrunning strategies and understanding them better.
@@ -6,24 +6,26 @@ It should help anyone getting started in understanding the inner workings of the
 The PC version used for research is GTA V 1.27 (build 372).
 
 # Repository information
-This is a repository used for putting together what I have found on the net and what I understand of GTA V.<br />
+This is a repository used for putting together what I have found on the net and what I understand of GTA V. **I am absoluetly not the sole source of information, please have a look at links below.**<br />
 The research is made to understand and research speedrunning strategies. It can help anyone wanting to do the same, as I found that information is very scattered over the net.<br />
 Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
 # Goals & TODO
 * Gather all ressources I use for GTA V script and game understanding
-* Improve ImGTA mod -> Debug mod
+* Improve ImGTA mod (helps debugging in game)
+* Link an updated fork of ImGTA (not online yet)
 
 # General information
 OpenIV allows you to extract some game files from the game folder on your computer: scripts, sounds, animations, models, audio files.<br /><br />
 A script decompiler allows you to transform the script extracted from openIV (two files: [script_name].ysc.full, [script_name].ysc.sys) from binary data (assembly) to a source file (language .NET probably) that you can read.<br />
-During this transformation the decompiler can translate some variable and function names from a hash to the readable name if it knows the corresponding name. The function names are called natives.<br /><br />
+During this transformation the decompiler can translate some entities and functions names from a hash to the readable name if it knows the corresponding name. The function names are called natives.<br /><br />
 Native hashes are not the same for every version of the game. But, we somehow have the corresponding hashes for every version (look at native hash update repository below).<br />
 The version of the game is the build number that you see in the bottom right corner when you start the game.<br />
 The speedrunning community has chosen the version 372 -- which corresponds to the PC version GTA V 1.27 -- because it is faster than other versions (load times, no wave, and maybe more).<br />
 
 # Hash information
 I could be wrong here, but from what I read on forums, discord and whatnot, here is what I understand:<br /><br />
+The following is only for natives (function names) because I think there are differences for other string entities.<br />
 Note: A hash function converts one value to another. For instance, the joaat hash algorithm: jooat("my_function_name") = 0xD62711A5<br /><br />
 The original game version (XBox version), build number 331, had hashes computed using Jenkins one-at-a-time (joaat) algorithm, which outputs a 32-bit hash (e.g., 0xD6 27 11 A5). Then, the other versions used another algorithm (unknown as far as I know) that outputs a 64-bit hash (e.g., 0xD5 B9 60 AA 31 EA F4 08).<br />
 Somehow, people made lists with corresponding hashes between each version, so that from whatever version of the game you have a hash, you can match it with the original 32-bit hash from the XBox version. And the name corresponding to that 32-bit hash can be found by bruteforcing it with the joaat algorithm.<br />
@@ -34,13 +36,22 @@ You can bruteforce jooat hash (32-bit!) with the tool "Hash Collider", link in '
 It will find multiple matching strings for your hash... which is normal because the algorithm can return the same output from two (or more) different inputs which means that if you find one matching string, you'll never be 100% sure it is the original one, but you be confident if the meaning matches the context where your native is called. 
 
 # Mod information
-The main possibility for modding the game is making .api files.<br />
-ScriptHookV allows for loading your mod.<br />
-ScriptHookVDotNet allows for making mods with .NET.<br />
+By default, GTA V does not allow modding the game, but a library named ScriptHookV (https://www.dev-c.com/gtav/scripthookv/) does!<br />
+It loads ASI plugins (.asi mods) made in C++. And, ScriptHookVDotNet is an ASI plugin that can load .dll mods made in .NET.<br />
+So, there are two types of mod files: .asi and .dll.<br />
+
+File structure:
+* **GTAV/[ScriptHookV_files]**: ScriptHookV files in GTA V folder
+* **GTAV/[ASI_mod.asi]**: .asi mods (made in C++) in GTA V folder
+* [optional] **GTAV/[ScriptHookVDotNet_files]**: ScriptHookVDotNet files in GTA V folder
+* [optional] **GTAV/scripts/[DLL_mod.dll]**: .dll mods (made in .NET) in a folder named "script" inside the GTA V folder
+
+You can reload mods ingame with 'Ctrl-R'.<br />
 
 # Cheat engine
-Cheat engine is a program that attaches to GTA V -- any program really --, it is used for watching the program memory and interacting with it.<br />
-I used it for looking at specific value within GTA V, like "Franklin", or a value that you want to know the location within the game...
+'Cheat engine' is a program that attaches itself to GTA V -- any program really --, it is used for watching the program memory and interacting with it.<br />
+I used it for looking at specific value within GTA V, like "Franklin", or a value that you want to know the location within the game...<br />
+In order to get the memory address of a variable, you need to know the value in game and you have to be able to make it change within the game so that you can find the only (or a few) values that changes as expected within Cheat engine (with multiple consecutive searches).
 
 # Useful Links
 ## Repositories
