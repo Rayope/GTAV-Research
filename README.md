@@ -57,6 +57,7 @@ In order to get the memory address of a variable, you need to know the value in 
 ## Repositories
 GTA V Mod to help debugging: https://github.com/drunderscore/ImGTA<br />
 Script Decompiler: https://github.com/njames93/GTA-V-Script-Decompiler<br />
+Batch Script Decompiler: https://github.com/Sainan/GTA-V-Script-Decompiler<br />
 Decompiled scripts for last version: https://github.com/Sainan/GTA-V-Decompiled-Scripts<br />
 ScriptHookVDotNet: https://github.com/crosire/scripthookvdotnet<br />
 Native Hash updater: https://github.com/indilo53/NativeHashUpdater<br />
