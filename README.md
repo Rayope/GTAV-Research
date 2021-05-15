@@ -6,7 +6,7 @@ It should help anyone getting started in understanding the inner workings of the
 The PC version used for research is GTA V 1.27 (build 372).
 
 # Repository information
-This is a repository used for putting together what I have found on the net and what I understand of GTA V. **I am absoluetly not the sole source of information, please have a look at links below.**<br />
+This is a repository used for putting together what I have found on the net and what I understand of GTA V.<br />**I am absolutely not the sole source of information, please have a look at links below.**<br />
 The research is made to understand and research speedrunning strategies. It can help anyone wanting to do the same, as I found that information is very scattered over the net.<br />
 Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
