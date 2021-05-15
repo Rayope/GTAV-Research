@@ -1,3 +1,184 @@
+Note: All lines starting with '_' are not verified.
+
+# Missions
+prologue1 = Prologue
+armenian1 = Franklin & Lamar
+armenian2 = Repossesion
+armenian3 = Complications
+family1 = Father and Son
+family1taxi
+family2 = Daddy's Little Girl
+family3 = Marriage Counseling
+family4 = Fame or Shame
+family5 = Did Somebody Say Yoga?
+family6 = Reuniting the Family
+lester1 = Friend Request
+jewelry_setup1 = Casing the Jewel Store
+jewelry_prep1a
+jewelry_prep1b = Carbine Rifles
+jewelry_prep2a
+jewelry_heist = The Jewel Store Job
+lamar1 = The Long Stretch
+trevor1 = Mr. Philips
+trevor2 = Nervous Ron
+trevor3 = Friends Reunited
+trevor4 = Hang Ten
+chinese1 = Trevor Philips Industries
+chinese2 = Crystal Maze
+franklin0 = Chop
+franklin1 = Hood Safari
+franklin2 = Lamar Down
+fbi1 = Dead Man Walking
+fbi2 = Three's Company
+fbi3 = By The Book
+fbi4_intro = Blitz Play Intro
+fbi4_prep1 = Garbage Truck
+fbi4_prep2 = Tow Truck
+fbi4_prep3
+fbi4_prep3amb
+fbi4_prep4 = Masks
+fbi4_prep5 = Boiler Suits
+fbi4 = Blitz Play Heist
+fbi5a = Monkey Business
+docks_setup = Scouting the Port
+docks_prep1 = Minisub
+docks_prep2b
+docks_heista = Merryweather Heist - Part A
+docks_heistb = Merryweather Heist - Part B
+assassin_valet = Hotel Assasination
+carsteal1 = I Fought The Law
+carsteal2 = Eye in the Sky
+carsteal3 = Deep Inside
+carsteal4 = Pack Man
+martin1 = Caida Libre
+exile1 = Minor Turbulance
+exile2 = Predator
+exile3 = Derailed
+rural_bank_setup = Paleto Score Setup
+rural_bank_prep1 = Military Hardware
+rural_bank_heist = Paleto Score
+final_heist1 = Surveying the Score
+michael1 = Bury the Hatchet
+michael2 = Fresh Meat
+michael3 = The Wrap Up
+michael4 = Meltdown
+michael4leadout
+solomon1 = Mr. Richards
+solomon2 = Ballad of Rocco
+solomon3 = Legal Trouble
+agency_prep1
+agency_prep2amb
+agency_heist1 = Cleaning Out The Bureau
+finale_heist2_intro = Big Score Setup Intro
+agency_heist2 = Architect's Plans
+agency_heist3a = Bureau Raid - Part A
+agency_heist3b = Bureau Raid - Part B
+finale_heist_prepa = Stingers
+finale_heist_prepc = Gauntlet
+finale_heist2a = The Big One - Part A
+finale_heist2b = The Big One - Part B
+finale_intro = Ending Choice
+finalec1 = The Third Way - Part 1
+finalec2 = The Third Way - Part 2
+finalea = Something Sensible
+finaleb = The Time's Come
+finale_choice
+finale_credits
+finale_endgame
+finale_heist_prepb
+finale_heist_prepd
+finale_heist_prepeamb
+
+# Optional missions
+_drf1 = Chaos
+_drf2 = Evil
+_drf3 = Negativity
+_drf4 = Fucked Up
+_drf5 = Abandonment Issues
+
+# Freaks
+tonya1 = Pulling Favours
+tonya2 = Pulling Another Favour
+tonya3 = Pulling Favours Again
+tonya4 = Still Pulling Favours
+tonya5 = Pulling One Last Favour
+hao1 = Shift Work
+paparazzo1 = Paparazzo
+_paparazzo2 = Paparazzo - The Sex Tape
+_paparazzo3 = Paparazzo - The Partnership
+paparazzo3a = Paparazzo - The Meltdown
+_paparazzo3b = Paparazzo - The Highness
+paparazzo4 = Paparazzo - Reality Check
+omega1 = Far Out
+omega2 = The Final Frontier
+_barry1 = Grass Roots - Michael
+_barry2 = Grass Roots - Trevor
+_barry3 = Grass Roots - Franklin
+barry3a = Grass Roots - The Pickup
+_barry3c = Grass Roots - The Drag
+barry4 = Grass Roots - The Smoke-in
+_bailbond1 = Ralph Ostrowski
+_bailbond2 = Larry Tupper
+_bailbond3 = Glenn Scoville
+_bailbond4 = Curtis Weaver
+assassin_hooker = The Vice Assassination
+assassin_bus = The Bus Assassination
+assassin_multi = The Multi-Target Assassination
+assassin_construction = The Construction Assassination
+fanatic3 = Exercising Demons - Franklin
+dreyfuss1 = A Starlet in Vinewood
+_rampage1 = Rampage: Rednecks
+_rampage2 = Rampage: Vagos
+_rampage3 = Rampage: Ballas
+_rampage4 = Rampage: Military
+_rampage5 = Rampage: Hipsters
+_josh1 = Extra Commission
+_josh2 = Closing the Deal
+_josh3 = Surreal Estate
+_josh4 = Breach of Contract
+_epsilon1 = Seeking the Truth
+_epsilon2 = Accepting the Truth
+_epsilon3 = Assuming the Truth
+_epsilon4 = Chasing the Truth
+_epsilon5 = Bearing the Truth
+_epsilon6 = Delivering the Truth
+_epsilon7 = Exercising the Truth
+_epsilon8 = Unknowing the Truth
+epscars
+epsdesert
+epsilontract
+epsrobes
+_nigel1 = Nigel and Mrs. Thronhill
+_nigel1a = Vinewood Souvenirs - Kerry
+_nigel1b = Vinewood Souvenirs - Willie
+_nigel1c = Vinewood Souvenirs - Tyler
+_nigel1d = Vinewood Souvenirs - Mark
+_nigel2 = Vinewood Souvenirs - Al Di Napoli
+_nigel3 = Vinewood Souvenirs - The Last Act
+_abigail1 = Death at Sea
+_abigail2 = What Lies Beneath
+_fanatic1 = Exerccising Demons - Michael
+_fanatic2 = Exerccising Demons - Franklin
+_fanatic3 = Exerccising Demons - Trevor
+_extreme1 = Risk Assessment
+_extreme2 = Liquidity Risk
+_extreme3 = Targeted Risk
+_extreme4 = Uncalculated Risk
+_mrsphilips1 = Mrs. Philips
+_mrsphilips2 = Damaged Goods
+_minute1 = The Civil Border Patrol
+_minute2 = An American Welcome
+_minute3 = Uncalculated Risk
+
+# Hobbies
+golf = Golf
+tennis = Tennis
+triathlonsp = Triathlon (all of them I think?)
+darts = Darts
+yoga = Yoga
+traffick_air = Arms Trafficking Air
+traffick_ground = Arms Trafficking Ground
+
 # Controllers
 ## Main
 autosave_controller
@@ -173,187 +354,6 @@ fm_mission_controller
 fm_mission_creator
 fm_race_controler
 fm_race_creator
-
-# Missions
-prologue1 = Prologue
-armenian1 = Franklin & Lamar
-armenian2 = Repossesion
-armenian3 = Complications
-family1 = Father and Son
-family1taxi
-family2 = Daddy's Little Girl
-family3 = Marriage Counseling
-family4 = Fame or Shame
-family5 = Did Somebody Say Yoga?
-family6 = Reuniting the Family
-lester1 = Friend Request
-jewelry_setup1 = Casing the Jewel Store
-jewelry_prep1a
-jewelry_prep1b = Carbine Rifles
-jewelry_prep2a
-jewelry_heist = The Jewel Store Job
-lamar1 = The Long Stretch
-trevor1 = Mr. Philips
-trevor2 = Nervous Ron
-trevor3 = Friends Reunited
-trevor4 = Hang Ten
-chinese1 = Trevor Philips Industries
-chinese2 = Crystal Maze
-franklin0 = Chop
-franklin1 = Hood Safari
-franklin2 = Lamar Down
-fbi1 = Dead Man Walking
-fbi2 = Three's Company
-fbi3 = By The Book
-fbi4_intro = Blitz Play Intro
-fbi4_prep1 = Garbage Truck
-fbi4_prep2 = Tow Truck
-fbi4_prep3
-fbi4_prep3amb
-fbi4_prep4 = Masks
-fbi4_prep5 = Boiler Suits
-fbi4 = Blitz Play Heist
-fbi5a = Monkey Business
-docks_setup = Scouting the Port
-docks_prep1 = Minisub
-docks_prep2b
-docks_heista = Merryweather Heist - Part A
-docks_heistb = Merryweather Heist - Part B
-assassin_valet = Hotel Assasination
-carsteal1 = I Fought The Law
-carsteal2 = Eye in the Sky
-carsteal3 = Deep Inside
-carsteal4 = Pack Man
-martin1 = Caida Libre
-exile1 = Minor Turbulance
-exile2 = Predator
-exile3 = Derailed
-rural_bank_setup = Paleto Score Setup
-rural_bank_prep1 = Military Hardware
-rural_bank_heist = Paleto Score
-final_heist1 = Surveying the Score
-michael1 = Bury the Hatchet
-michael2 = Fresh Meat
-michael3 = The Wrap Up
-michael4 = Meltdown
-michael4leadout
-solomon1 = Mr. Richards
-solomon2 = Ballad of Rocco
-solomon3 = Legal Trouble
-agency_prep1
-agency_prep2amb
-agency_heist1 = Cleaning Out The Bureau
-finale_heist2_intro = Big Score Setup Intro
-agency_heist2 = Architect's Plans
-agency_heist3a = Bureau Raid - Part A
-agency_heist3b = Bureau Raid - Part B
-finale_heist_prepa = Stingers
-finale_heist_prepc = Gauntlet
-finale_heist2a = The Big One - Part A
-finale_heist2b = The Big One - Part B
-finale_intro = Ending Choice
-finalec1 = The Third Way - Part 1
-finalec2 = The Third Way - Part 2
-finalea = Something Sensible
-finaleb = The Time's Come
-finale_choice
-finale_credits
-finale_endgame
-finale_heist_prepb
-finale_heist_prepd
-finale_heist_prepeamb
-
-# Optional missions
-_drf1 = Chaos
-_drf2 = Evil
-_drf3 = Negativity
-_drf4 = Fucked Up
-_drf5 = Abandonment Issues
-
-# Freaks
-tonya1 = Pulling Favours
-tonya2 = Pulling Another Favour
-tonya3 = Pulling Favours Again
-tonya4 = Still Pulling Favours
-tonya5 = Pulling One Last Favour
-hao1 = Shift Work
-paparazzo1 = Paparazzo
-_paparazzo2 = Paparazzo - The Sex Tape
-_paparazzo3 = Paparazzo - The Partnership
-paparazzo3a = Paparazzo - The Meltdown
-_paparazzo3b = Paparazzo - The Highness
-paparazzo4 = Paparazzo - Reality Check
-omega1 = Far Out
-omega2 = The Final Frontier
-_barry1 = Grass Roots - Michael
-_barry2 = Grass Roots - Trevor
-_barry3 = Grass Roots - Franklin
-barry3a = Grass Roots - The Pickup
-_barry3c = Grass Roots - The Drag
-barry4 = Grass Roots - The Smoke-in
-_bailbond1 = Ralph Ostrowski
-_bailbond2 = Larry Tupper
-_bailbond3 = Glenn Scoville
-_bailbond4 = Curtis Weaver
-assassin_hooker = The Vice Assassination
-assassin_bus = The Bus Assassination
-assassin_multi = The Multi-Target Assassination
-assassin_construction = The Construction Assassination
-fanatic3 = Exercising Demons - Franklin
-dreyfuss1 = A Starlet in Vinewood
-_rampage1 = Rampage: Rednecks
-_rampage2 = Rampage: Vagos
-_rampage3 = Rampage: Ballas
-_rampage4 = Rampage: Military
-_rampage5 = Rampage: Hipsters
-_josh1 = Extra Commission
-_josh2 = Closing the Deal
-_josh3 = Surreal Estate
-_josh4 = Breach of Contract
-_epsilon1 = Seeking the Truth
-_epsilon2 = Accepting the Truth
-_epsilon3 = Assuming the Truth
-_epsilon4 = Chasing the Truth
-_epsilon5 = Bearing the Truth
-_epsilon6 = Delivering the Truth
-_epsilon7 = Exercising the Truth
-_epsilon8 = Unknowing the Truth
-epscars
-epsdesert
-epsilontract
-epsrobes
-_nigel1 = Nigel and Mrs. Thronhill
-_nigel1a = Vinewood Souvenirs - Kerry
-_nigel1b = Vinewood Souvenirs - Willie
-_nigel1c = Vinewood Souvenirs - Tyler
-_nigel1d = Vinewood Souvenirs - Mark
-_nigel2 = Vinewood Souvenirs - Al Di Napoli
-_nigel3 = Vinewood Souvenirs - The Last Act
-_abigail1 = Death at Sea
-_abigail2 = What Lies Beneath
-_fanatic1 = Exerccising Demons - Michael
-_fanatic2 = Exerccising Demons - Franklin
-_fanatic3 = Exerccising Demons - Trevor
-_extreme1 = Risk Assessment
-_extreme2 = Liquidity Risk
-_extreme3 = Targeted Risk
-_extreme4 = Uncalculated Risk
-_mrsphilips1 = Mrs. Philips
-_mrsphilips2 = Damaged Goods
-_minute1 = The Civil Border Patrol
-_minute2 = An American Welcome
-_minute3 = Uncalculated Risk
-
-
-
-# Hobbies
-golf = Golf
-tennis = Tennis
-triathlonsp = Triathlon (all of them I think?)
-darts = Darts
-yoga = Yoga
-traffick_air = Arms Trafficking Air
-traffick_ground = Arms Trafficking Ground
 
 # Player scenes
 player_scene_f_lamgraff
