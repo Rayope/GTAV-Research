@@ -1,7 +1,7 @@
 In development... it's going to be messy for a few days probably. Come back in a few days!
 
 # GTA V Script Documentation and 'Game Research'
-The main goal is for finding new speedrunning strategies and understanding them better.
+The main goal is to find new speedrunning strategies and understand them better.
 It should help anyone getting started in understanding the inner workings of the game...Hopefully<br />
 The PC version used for research is GTA V 1.27 (build 372).
 
