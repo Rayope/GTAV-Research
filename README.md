@@ -3,7 +3,7 @@ In development... it's going to be messy for a few days probably. Come back in a
 # GTA V Script Documentation and 'Game Research'
 The main goal is to find new speedrunning strategies and understand them better.
 It should help anyone getting started in understanding the inner workings of the game...Hopefully<br />
-The PC version used for research is GTA V 1.27 (build 372).
+The PC version used for research is **GTA V build 372, online 1.27**.
 
 # Repository information
 This is a repository used for putting together what I have found on the net and what I understand of GTA V.<br />**I am absolutely not the sole source of information, please have a look at links below.**<br />
