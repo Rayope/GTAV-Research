@@ -12,10 +12,10 @@ Globals are named like this:
 * Simple: Global_37E9
 * Struct: Global_37E9.f_6A
     * You can get the value by going to (0x37E9 + 0x6A) -> The address getGlobalPtr(0x3853)
-* Array: Global_178B8[id /*10*/]
-    * The value '10' is the size of each element in DWORD64, meaning the size of each element in bytes is 10 * 8.
+* Array: Global_178B8[id /***10***/]
+    * The value '**10**' is the size of each element in DWORD64, meaning the size of each element in bytes is **10** * 8.
     * The address 0x178B8 is actually an int for the size of the array, the first elements starts at **0x178B9**
-    * You can get the value (struct of size (10 * 8) bytes) by going to 0x178B9 + 1 + id * sizeof(struct) / 8
+    * You can get the value (struct of size (**10** * 8) bytes, sizeof(struct) = 80) by going to 0x178B9 + 1 + id * sizeof(struct) / 8
 
 Again, the index written after 'Global_' is not an address, you have to use getGlobalPtr(yourIndex), to get the memory address.
 
