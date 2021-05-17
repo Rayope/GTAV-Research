@@ -5,7 +5,8 @@ There are a bunch of global variables that are easily accesible and can provide 
 You can find the matching address for another game version if you decompile it and compare with this version (compare two scripts that use it).
 
 # Globals in the scripts:
-Make sure to decompile the scripts with the option to have the global written in hexadecimal instead of decimal, it'll help as you use the hexadecimal to access them (most people use the hexadecimal index, so I chose to use it too but you can use the decimal representation as well). I sometimes say 'address' when it should be the 'index for the address' that you can get with getGlobalPtr(yourIndex).
+Make sure to decompile the scripts with the option to have the global written in hexadecimal instead of decimal, it'll help as you use the hexadecimal to access them (most people use the hexadecimal index, so I chose to use it too but you can use the decimal representation as well).<br />
+*I sometimes say 'address' when it should be the 'index for the address' that you can get with getGlobalPtr(yourIndex).**
 
 Globals are named like this:
 * Simple: Global_37E9
