@@ -4,38 +4,38 @@
 	int iLocal_2 = 0;
 	var uLocal_3 = 0;
 	struct<3> Local_4 = { 0, 0, 0 } ;
-	struct<3> Local_5 = { 0, 0, 0 } ;
-	var uLocal_6 = 0;
+	struct<3> Local_7 = { 0, 0, 0 } ;
+	var uScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	float fVar3;
+	struct<3> Var3;
+	struct<3> Var6;
+	float fVar9;
 	
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
 		func_4();
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_6))
+	if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_0))
 	{
-		ENTITY::FREEZE_ENTITY_POSITION(uScriptParam_6, 1);
-		Local_4 = { ENTITY::GET_ENTITY_COORDS(uScriptParam_6, 1) };
-		Local_5 = { ENTITY::GET_ENTITY_ROTATION(uScriptParam_6, 2) };
+		ENTITY::FREEZE_ENTITY_POSITION(uScriptParam_0, 1);
+		Local_4 = { ENTITY::GET_ENTITY_COORDS(uScriptParam_0, 1) };
+		Local_7 = { ENTITY::GET_ENTITY_ROTATION(uScriptParam_0, 2) };
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_6))
+		if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(uScriptParam_6))
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(uScriptParam_0))
 			{
 				switch (iLocal_2)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_0))
 						{
 							STREAMING::REQUEST_MODEL(joaat("p_abat_roller_1_col"));
 							if (STREAMING::HAS_MODEL_LOADED(joaat("p_abat_roller_1_col")))
@@ -43,7 +43,7 @@ void __EntryFunction__()//Position - 0x0
 								if (!func_3(Local_4, 0f, 0f, 0f))
 								{
 									uLocal_3 = OBJECT::CREATE_OBJECT(joaat("p_abat_roller_1_col"), Local_4, 1, 1, 0);
-									ENTITY::SET_ENTITY_ROTATION(uLocal_3, Local_5, 2, 1);
+									ENTITY::SET_ENTITY_ROTATION(uLocal_3, Local_7, 2, 1);
 									iLocal_2 = 1;
 								}
 							}
@@ -51,7 +51,7 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 1:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_0))
 						{
 							if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
 							{
@@ -65,15 +65,15 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 2:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_0))
 						{
 							if (SCRIPT::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("michael2")) > 0)
 							{
-								if (Global_1530E)
+								if (Global_86798)
 								{
 									if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
 									{
-										ENTITY::PLAY_ENTITY_ANIM(uScriptParam_6, "P_Abat_roller_1_open", "map_objects", 1f, 0, 1, 0, 0, 0);
+										ENTITY::PLAY_ENTITY_ANIM(uScriptParam_0, "P_Abat_roller_1_open", "map_objects", 1f, 0, 1, 0, 0, 0);
 										iLocal_2 = 3;
 									}
 								}
@@ -82,19 +82,19 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 3:
-						fVar3 = 0.35f;
+						fVar9 = 0.35f;
 						Var0 = { Local_4 + Vector(3.45f, 0f, 0f) };
 						if (ENTITY::DOES_ENTITY_EXIST(uLocal_3))
 						{
-							Var1 = { ENTITY::GET_ENTITY_COORDS(uLocal_3, 1) };
-							if (!func_2(Var1, Var0, 0.1f))
+							Var3 = { ENTITY::GET_ENTITY_COORDS(uLocal_3, 1) };
+							if (!func_2(Var3, Var0, 0.1f))
 							{
-								Var2 = { Var0 - Var1 };
-								ENTITY::SET_ENTITY_COORDS(uLocal_3, Var1 + func_1(Var2) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar3, fVar3, fVar3), 1, 0, 0, 1);
+								Var6 = { Var0 - Var3 };
+								ENTITY::SET_ENTITY_COORDS(uLocal_3, Var3 + func_1(Var6) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar9, fVar9, fVar9), 1, 0, 0, 1);
 							}
 							else
 							{
-								Global_1530F = 1;
+								Global_86799 = 1;
 								iLocal_2 = 4;
 							}
 						}
@@ -136,17 +136,17 @@ Vector3 func_1(struct<3> Param0)//Position - 0x1C4
 	return Param0;
 }
 
-int func_2(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x203
+int func_2(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x203
 {
-	if (fParam2 < 0f)
+	if (fParam6 < 0f)
 	{
-		fParam2 = 0f;
+		fParam6 = 0f;
 	}
-	if (MISC::ABSF((Param0.x - Param1.x)) <= fParam2)
+	if (MISC::ABSF((Param0.x - Param3.x)) <= fParam6)
 	{
-		if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
+		if (MISC::ABSF((Param0.f_1 - Param3.f_1)) <= fParam6)
 		{
-			if (MISC::ABSF((Param0.f_2 - Param1.f_2)) <= fParam2)
+			if (MISC::ABSF((Param0.f_2 - Param3.f_2)) <= fParam6)
 			{
 				return 1;
 			}
@@ -155,9 +155,9 @@ int func_2(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x203
 	return 0;
 }
 
-bool func_3(struct<3> Param0, struct<3> Param1)//Position - 0x24F
+bool func_3(struct<3> Param0, struct<3> Param3)//Position - 0x24F
 {
-	return ((Param0.x == Param1.x && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.x == Param3.x && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 void func_4()//Position - 0x278

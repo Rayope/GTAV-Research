@@ -13,8 +13,8 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_1();
 	}
-	uLocal_0 = ScriptParam_3;
-	uLocal_1 = ScriptParam_3.f_1;
+	uLocal_0 = ScriptParam_0;
+	uLocal_1 = ScriptParam_0.f_1;
 	while (!MISC::IS_BIT_SET(uLocal_2, 1))
 	{
 		if (!MISC::IS_BIT_SET(uLocal_2, 0))

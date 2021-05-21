@@ -87,7 +87,7 @@ void func_1(int iParam0, int iParam1)//Position - 0xAD
 	{
 		return;
 	}
-	Global_17C49.f_1AD5[iParam0] = 1;
-	Global_17C49.f_1AD5.f_EC[iParam0] = (MISC::GET_GAME_TIMER() + iParam1);
+	Global_97353.f_6869[iParam0] = 1;
+	Global_97353.f_6869.f_236[iParam0] = (MISC::GET_GAME_TIMER() + iParam1);
 }
 

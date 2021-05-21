@@ -3,30 +3,30 @@
 	var uLocal_1 = 0;
 	int iLocal_2 = 0;
 	var uLocal_3[20] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	bool bLocal_4 = 0;
-	struct<3> Local_5 = { 0, 0, 0 } ;
-	struct<2> Local_6 = { 0, 5 } ;
-	var uLocal_7 = 0;
-	var uLocal_8 = 0;
-	var uLocal_9 = 0;
-	var uLocal_10 = 0;
-	var uLocal_11 = 0;
-	var uLocal_12 = 0;
-	var uLocal_13 = 0;
-	var uLocal_14 = 0;
-	var uLocal_15 = 0;
-	var uLocal_16 = 0;
-	var uLocal_17 = 0;
-	var uLocal_18 = 0;
-	var uLocal_19 = 0;
-	var uLocal_20 = 0;
-	var uLocal_21 = 0;
-	var uLocal_22 = 5;
-	var uLocal_23 = 0;
-	var uLocal_24 = 0;
-	var uLocal_25 = 0;
-	var uLocal_26 = 0;
-	var uLocal_27 = 0;
+	bool bLocal_24 = 0;
+	struct<3> Local_25 = { 0, 0, 0 } ;
+	struct<2> ScriptParam_0 = { 0, 5 } ;
+	var uScriptParam_2 = 0;
+	var uScriptParam_3 = 0;
+	var uScriptParam_4 = 0;
+	var uScriptParam_5 = 0;
+	var uScriptParam_6 = 0;
+	var uScriptParam_7 = 0;
+	var uScriptParam_8 = 0;
+	var uScriptParam_9 = 0;
+	var uScriptParam_10 = 0;
+	var uScriptParam_11 = 0;
+	var uScriptParam_12 = 0;
+	var uScriptParam_13 = 0;
+	var uScriptParam_14 = 0;
+	var uScriptParam_15 = 0;
+	var uScriptParam_16 = 0;
+	var uScriptParam_17 = 5;
+	var uScriptParam_18 = 0;
+	var uScriptParam_19 = 0;
+	var uScriptParam_20 = 0;
+	var uScriptParam_21 = 0;
+	var uScriptParam_22 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -34,14 +34,14 @@ void __EntryFunction__()//Position - 0x0
 	struct<3> Var0;
 	
 	iLocal_2 = -1;
-	Var0 = { ScriptParam_6.f_1[0 /*3*/] };
+	Var0 = { ScriptParam_0.f_1[0 /*3*/] };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19))
 	{
 		func_26();
 	}
 	func_24(Var0);
-	bLocal_4 = func_4();
-	Local_5 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 0) };
+	bLocal_24 = func_4();
+	Local_25 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 0) };
 	func_1();
 	while (true)
 	{
@@ -58,76 +58,76 @@ void func_1()//Position - 0x5C
 	int iVar0;
 	int iVar1;
 	struct<3> Var2;
-	struct<3> Var3;
-	int iVar4;
-	var uVar5;
+	struct<3> Var5;
+	int iVar8;
+	var uVar9;
 	
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 20)
 	{
-		if (func_3(iVar0, &iVar1, &Var2, &Var3, &uVar5))
+		if (func_3(iVar0, &iVar1, &Var2, &Var5, &uVar9))
 		{
-			if (func_2(Var3, 0f, 0f, 0f))
+			if (func_2(Var5, 0f, 0f, 0f))
 			{
-				iVar4 = 0;
-				MISC::SET_BIT(&iVar4, 1);
-				MISC::SET_BIT(&iVar4, 4);
-				MISC::SET_BIT(&iVar4, 3);
+				iVar8 = 0;
+				MISC::SET_BIT(&iVar8, 1);
+				MISC::SET_BIT(&iVar8, 4);
+				MISC::SET_BIT(&iVar8, 3);
 				if (iVar1 == joaat("pickup_money_case"))
 				{
-					if (bLocal_4)
+					if (bLocal_24)
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar4, uVar5, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar8, uVar9, 1, 0);
 					}
 				}
-				else if (SYSTEM::VDIST2(Var2, Local_5) > 400f)
+				else if (SYSTEM::VDIST2(Var2, Local_25) > 400f)
 				{
 					if (iVar1 == joaat("pickup_armour_standard"))
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar4, iVar5, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar8, iVar9, 1, 0);
 					}
 					else if ((iVar1 == joaat("pickup_weapon_grenadelauncher") || iVar1 == joaat("pickup_weapon_rpg")) || iVar1 == joaat("pickup_weapon_mg"))
 					{
-						if (bLocal_4)
+						if (bLocal_24)
 						{
-							uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar4, -1, 1, 0);
+							uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar8, -1, 1, 0);
 						}
 					}
 					else
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar4, -1, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP(iVar1, Var2, iVar8, -1, 1, 0);
 					}
 				}
 			}
 			else
 			{
-				iVar4 = 0;
-				MISC::SET_BIT(&iVar4, 1);
-				MISC::SET_BIT(&iVar4, 4);
+				iVar8 = 0;
+				MISC::SET_BIT(&iVar8, 1);
+				MISC::SET_BIT(&iVar8, 4);
 				if (iVar1 == joaat("pickup_money_case"))
 				{
-					if (bLocal_4)
+					if (bLocal_24)
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var3, iVar4, 10000, 2, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var5, iVar8, 10000, 2, 1, 0);
 					}
 				}
-				else if (SYSTEM::VDIST2(Var2, Local_5) > 400f)
+				else if (SYSTEM::VDIST2(Var2, Local_25) > 400f)
 				{
 					if (iVar1 == joaat("pickup_armour_standard"))
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var3, iVar4, -1, 2, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var5, iVar8, -1, 2, 1, 0);
 					}
 					else if ((iVar1 == joaat("pickup_weapon_grenadelauncher") || iVar1 == joaat("pickup_weapon_rpg")) || iVar1 == joaat("pickup_weapon_mg"))
 					{
-						if (bLocal_4)
+						if (bLocal_24)
 						{
-							uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var3, iVar4, -1, 2, 1, 0);
+							uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var5, iVar8, -1, 2, 1, 0);
 						}
 					}
 					else
 					{
-						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var3, iVar4, -1, 2, 1, 0);
+						uLocal_3[iVar0] = OBJECT::CREATE_PICKUP_ROTATE(iVar1, Var2, Var5, iVar8, -1, 2, 1, 0);
 					}
 				}
 			}
@@ -136,9 +136,9 @@ void func_1()//Position - 0x5C
 	}
 }
 
-bool func_2(struct<3> Param0, struct<3> Param1)//Position - 0x251
+bool func_2(struct<3> Param0, struct<3> Param3)//Position - 0x251
 {
-	return ((Param0.x == Param1.x && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.x == Param3.x && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 int func_3(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)//Position - 0x27A
@@ -970,16 +970,16 @@ int func_3(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)//Pos
 
 int func_4()//Position - 0x17B9
 {
-	if (Global_252BB5 == -15)
+	if (Global_2436021 == -15)
 	{
-		Global_252BB5 = func_23();
-		func_15(&Global_252BB5, 0, 0, 0, 1, 0, 0);
+		Global_2436021 = func_23();
+		func_15(&Global_2436021, 0, 0, 0, 1, 0, 0);
 		return 1;
 	}
-	if (func_5(func_23(), Global_252BB5))
+	if (func_5(func_23(), Global_2436021))
 	{
-		Global_252BB5 = func_23();
-		func_15(&Global_252BB5, 0, 0, 0, 1, 0, 0);
+		Global_2436021 = func_23();
+		func_15(&Global_2436021, 0, 0, 0, 1, 0, 0);
 		return 1;
 	}
 	return 0;
@@ -1370,7 +1370,7 @@ int func_23()//Position - 0x1EA2
 void func_24(struct<3> Param0)//Position - 0x1EE8
 {
 	struct<3> Var0[12];
-	int iVar1;
+	int iVar37;
 	
 	Var0[0 /*3*/] = { -1029f, 6517f, -21f };
 	Var0[1 /*3*/] = { 3265f, 6407f, -47f };
@@ -1384,29 +1384,29 @@ void func_24(struct<3> Param0)//Position - 0x1EE8
 	Var0[9 /*3*/] = { 1804f, -2993f, -46f };
 	Var0[10 /*3*/] = { -131f, -2867f, -10f };
 	Var0[11 /*3*/] = { 3595f, 3041f, -15f };
-	iVar1 = 0;
-	while (iVar1 <= (12 - 1))
+	iVar37 = 0;
+	while (iVar37 <= (12 - 1))
 	{
-		if (func_25(Param0, Var0[iVar1 /*3*/], 1056964608))
+		if (func_25(Param0, Var0[iVar37 /*3*/], 1056964608))
 		{
-			iLocal_2 = iVar1;
+			iLocal_2 = iVar37;
 			return;
 		}
-		iVar1++;
+		iVar37++;
 	}
 }
 
-int func_25(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x2036
+int func_25(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x2036
 {
-	if (fParam2 < 0f)
+	if (fParam6 < 0f)
 	{
-		fParam2 = 0f;
+		fParam6 = 0f;
 	}
-	if (MISC::ABSF((Param0.x - Param1.x)) <= fParam2)
+	if (MISC::ABSF((Param0.x - Param3.x)) <= fParam6)
 	{
-		if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
+		if (MISC::ABSF((Param0.f_1 - Param3.f_1)) <= fParam6)
 		{
-			if (MISC::ABSF((Param0.f_2 - Param1.f_2)) <= fParam2)
+			if (MISC::ABSF((Param0.f_2 - Param3.f_2)) <= fParam6)
 			{
 				return 1;
 			}

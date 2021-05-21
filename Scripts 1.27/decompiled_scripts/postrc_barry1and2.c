@@ -48,7 +48,7 @@
 	int iLocal_46 = 0;
 	int iLocal_47 = 0;
 	struct<3> Local_48 = { 0, 0, 0 } ;
-	struct<3> Local_49 = { 0, 0, 0 } ;
+	struct<3> Local_51 = { 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -75,7 +75,7 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_43 = "RCMBarryLeadInOut";
 	sLocal_44 = "idle";
 	Local_48 = { 189.5964f, -956.0344f, 29.5771f };
-	Local_49 = { 190.2424f, -956.379f, 28.63f };
+	Local_51 = { 190.2424f, -956.379f, 28.63f };
 	PAD::DISABLE_CONTROL_ACTION(0, 26, 1);
 	if (func_24(PLAYER::PLAYER_PED_ID()))
 	{
@@ -100,7 +100,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_45 = MISC::GET_GAME_TIMER() + 13000;
 	iLocal_46 = MISC::GET_RANDOM_INT_IN_RANGE(0, 5);
 	func_18();
-	while (!func_13(&uLocal_42, 49, Local_49, func_17(1.12f), 0))
+	while (!func_13(&uLocal_42, 49, Local_51, func_17(1.12f), 0))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, 26, 1);
 		SYSTEM::WAIT(0);
@@ -124,7 +124,7 @@ void __EntryFunction__()//Position - 0x0
 		if (func_3())
 		{
 		}
-		if (func_2(PLAYER::PLAYER_PED_ID(), Local_49, 1) > 70f)
+		if (func_2(PLAYER::PLAYER_PED_ID(), Local_51, 1) > 70f)
 		{
 			func_1(&uLocal_39, 0);
 			func_1(&uLocal_40, 0);
@@ -154,7 +154,7 @@ void func_1(var uParam0, bool bParam1)//Position - 0x1D6
 	}
 }
 
-float func_2(var uParam0, struct<3> Param1, int iParam2)//Position - 0x211
+float func_2(var uParam0, struct<3> Param1, int iParam4)//Position - 0x211
 {
 	struct<3> Var0;
 	
@@ -166,7 +166,7 @@ float func_2(var uParam0, struct<3> Param1, int iParam2)//Position - 0x211
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(uParam0, 0) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Param1, iParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Param1, iParam4);
 }
 
 int func_3()//Position - 0x24A
@@ -194,36 +194,36 @@ void func_4(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4,
 			iParam3 = 7;
 		}
 	}
-	MISC::SET_BIT(&Global_38DE, 0);
-	Global_3D4F = iParam3;
-	StringCopy(&Global_3D42, sParam2, 24);
+	MISC::SET_BIT(&Global_14558, 0);
+	Global_15695 = iParam3;
+	StringCopy(&Global_15682, sParam2, 24);
 }
 
 void func_5(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5)//Position - 0x315
 {
-	Global_3B2A = { *uParam0 };
-	Global_62B = iParam1;
-	StringCopy(&Global_3D92, sParam2, 24);
-	Global_4129 = iParam5;
+	Global_15146 = { *uParam0 };
+	Global_1579 = iParam1;
+	StringCopy(&Global_15762, sParam2, 24);
+	Global_16681 = iParam5;
 	if (iParam3 == 0)
 	{
-		Global_4127 = 1;
-		Global_4125 = 0;
+		Global_16679 = 1;
+		Global_16677 = 0;
 	}
 	else
 	{
-		Global_4127 = 0;
-		Global_4125 = 1;
+		Global_16679 = 0;
+		Global_16677 = 1;
 	}
 	if (iParam4 == 0)
 	{
-		Global_4128 = 1;
-		Global_4126 = 0;
+		Global_16680 = 1;
+		Global_16678 = 0;
 	}
 	else
 	{
-		Global_4128 = 0;
-		Global_4126 = 1;
+		Global_16680 = 0;
+		Global_16678 = 1;
 	}
 }
 
@@ -271,7 +271,7 @@ void func_7(var uParam0, int iParam1, var uParam2, char* sParam3, int iParam4, i
 	(uParam0[iParam1 /*10*/])->f_7 = 1;
 	(uParam0[iParam1 /*10*/])->f_8 = iParam4;
 	(uParam0[iParam1 /*10*/])->f_9 = iParam5;
-	if (!Global_10A95)
+	if (!Global_68245)
 	{
 		if (!PED::IS_PED_INJURED(uParam2))
 		{
@@ -301,7 +301,7 @@ void func_7(var uParam0, int iParam1, var uParam2, char* sParam3, int iParam4, i
 float func_8(var uParam0, var uParam1, int iParam2)//Position - 0x46C
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(uParam0))
 	{
@@ -313,18 +313,18 @@ float func_8(var uParam0, var uParam1, int iParam2)//Position - 0x46C
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(uParam1))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(uParam1, 1) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(uParam1, 1) };
 	}
 	else
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(uParam1, 0) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(uParam1, 0) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var1, iParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var3, iParam2);
 }
 
 int func_9()//Position - 0x4C8
 {
-	if (Global_3D4C != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
+	if (Global_15692 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
 		return 1;
 	}
@@ -345,7 +345,7 @@ int func_10(var uParam0)//Position - 0x4EA
 
 void func_11()//Position - 0x50A
 {
-	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_49, 5f))
+	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_51, 5f))
 	{
 		if (func_10(uLocal_42))
 		{
@@ -379,7 +379,7 @@ void func_12()//Position - 0x559
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(uLocal_42, 1862763509);
 		ENTITY::SET_ENTITY_COLLISION(uLocal_42, 0, 0);
 		ENTITY::FREEZE_ENTITY_POSITION(uLocal_42, 1);
-		ENTITY::SET_ENTITY_COORDS(uLocal_42, Local_49, 1, 0, 0, 1);
+		ENTITY::SET_ENTITY_COORDS(uLocal_42, Local_51, 1, 0, 0, 1);
 		ENTITY::SET_ENTITY_HEADING(uLocal_42, func_17(1.12f));
 		ENTITY::FREEZE_ENTITY_POSITION(uLocal_42, 1);
 		TASK::TASK_PLAY_ANIM(uLocal_42, sLocal_43, sLocal_44, 8f, -8f, -1, 9, 0, 0, 0, 0);
@@ -387,7 +387,7 @@ void func_12()//Position - 0x559
 	}
 }
 
-int func_13(var uParam0, int iParam1, struct<3> Param2, var uParam3, bool bParam4)//Position - 0x60A
+int func_13(var uParam0, int iParam1, struct<3> Param2, var uParam5, bool bParam6)//Position - 0x60A
 {
 	int iVar0;
 	
@@ -401,7 +401,7 @@ int func_13(var uParam0, int iParam1, struct<3> Param2, var uParam3, bool bParam
 			{
 				PED::DELETE_PED(uParam0);
 			}
-			*uParam0 = PED::CREATE_PED(26, iVar0, Param2, uParam3, 0, 0);
+			*uParam0 = PED::CREATE_PED(26, iVar0, Param2, uParam5, 0, 0);
 			PED::SET_PED_DEFAULT_COMPONENT_VARIATION(*uParam0);
 			if (iVar0 == joaat("ig_lamardavis"))
 			{
@@ -411,7 +411,7 @@ int func_13(var uParam0, int iParam1, struct<3> Param2, var uParam3, bool bParam
 				}
 			}
 			func_14(*uParam0, iParam1);
-			if (bParam4)
+			if (bParam6)
 			{
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar0);
 			}
@@ -443,7 +443,7 @@ int func_14(var uParam0, int iParam1)//Position - 0x698
 		iVar0 = 7;
 		return 0;
 	}
-	Global_150B9[(iVar0 - 3)] = uParam0;
+	Global_86201[(iVar0 - 3)] = uParam0;
 	return 1;
 }
 
@@ -451,7 +451,7 @@ int func_15(int iParam0)//Position - 0x6DE
 {
 	if (!func_16(iParam0))
 	{
-		return Global_17C49.f_744E[iParam0 /*29*/];
+		return Global_97353.f_29774[iParam0 /*29*/];
 	}
 	else if (iParam0 != 145)
 	{
@@ -532,11 +532,11 @@ void func_18()//Position - 0x725
 	}
 }
 
-void func_19(var uParam0, int iParam1, struct<3> Param2, float fParam3)//Position - 0x956
+void func_19(var uParam0, int iParam1, struct<3> Param2, float fParam5)//Position - 0x956
 {
 	func_20(uParam0);
 	*uParam0 = OBJECT::CREATE_OBJECT(iParam1, Param2, 1, 1, 0);
-	ENTITY::SET_ENTITY_HEADING(*uParam0, fParam3);
+	ENTITY::SET_ENTITY_HEADING(*uParam0, fParam5);
 }
 
 void func_20(var uParam0)//Position - 0x97D

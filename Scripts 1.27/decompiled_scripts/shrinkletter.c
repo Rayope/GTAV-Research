@@ -444,7 +444,7 @@ void func_1(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, i
 		}
 		iVar5 = 0;
 		iVar6 = 0;
-		while (iVar6 < uParam0->f_7B)
+		while (iVar6 < uParam0->f_123)
 		{
 			switch (uParam0->f_2[iVar6 /*15*/].f_2)
 			{
@@ -471,12 +471,12 @@ void func_1(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, i
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
 					iVar5++;
 					iVar7 = 0;
-					while (iVar7 < uParam0->f_2[iVar6 /*15*/].f_E)
+					while (iVar7 < uParam0->f_2[iVar6 /*15*/].f_14)
 					{
 						uVar0 = uParam0->f_2[iVar6 /*15*/].f_3[iVar7 /*2*/];
 						uVar1 = uParam0->f_2[iVar6 /*15*/].f_3[iVar7 /*2*/].f_1;
-						bVar2 = MISC::IS_BIT_SET(uParam0->f_2[iVar6 /*15*/].f_D, iVar7);
-						if (!MISC::IS_BIT_SET(uParam0->f_2[iVar6 /*15*/].f_C, iVar7))
+						bVar2 = MISC::IS_BIT_SET(uParam0->f_2[iVar6 /*15*/].f_13, iVar7);
+						if (!MISC::IS_BIT_SET(uParam0->f_2[iVar6 /*15*/].f_12, iVar7))
 						{
 							uVar3 = PAD::GET_CONTROL_INSTRUCTIONAL_BUTTON(uVar0, uVar1, bVar2);
 						}
@@ -611,23 +611,23 @@ int func_10(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, i
 	{
 		iVar0 = 1;
 	}
-	iVar1 = uParam0->f_7B;
+	iVar1 = uParam0->f_123;
 	if (iVar1 < 8)
 	{
 		uParam0->f_2[iVar1 /*15*/] = sParam1;
 		uParam0->f_2[iVar1 /*15*/].f_1 = iVar0;
 		uParam0->f_2[iVar1 /*15*/].f_2 = iParam6;
-		uParam0->f_2[iVar1 /*15*/].f_C = 0;
-		uParam0->f_2[iVar1 /*15*/].f_D = 0;
-		uParam0->f_2[iVar1 /*15*/].f_E = 0;
+		uParam0->f_2[iVar1 /*15*/].f_12 = 0;
+		uParam0->f_2[iVar1 /*15*/].f_13 = 0;
+		uParam0->f_2[iVar1 /*15*/].f_14 = 0;
 		uParam0->f_2[iVar1 /*15*/].f_3[0 /*2*/] = iParam2;
 		uParam0->f_2[iVar1 /*15*/].f_3[0 /*2*/].f_1 = iParam3;
 		if (iParam4 == 1)
 		{
-			MISC::SET_BIT(&(uParam0->f_2[iVar1 /*15*/].f_D), 0);
+			MISC::SET_BIT(&(uParam0->f_2[iVar1 /*15*/].f_13), 0);
 		}
-		uParam0->f_2[iVar1 /*15*/].f_E++;
-		uParam0->f_7B++;
+		uParam0->f_2[iVar1 /*15*/].f_14++;
+		uParam0->f_123++;
 		return 1;
 	}
 	return 0;
@@ -640,7 +640,7 @@ void func_11(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 		*uParam0 = GRAPHICS::REQUEST_SCALEFORM_MOVIE_INSTANCE("instructional_buttons");
 	}
 	uParam0->f_1 = 0;
-	uParam0->f_7B = 0;
+	uParam0->f_123 = 0;
 	if (bParam1)
 	{
 		func_3(&(uParam0->f_1), 32);
@@ -674,7 +674,7 @@ void func_12(var uParam0)//Position - 0x86C
 		*uParam0 = 0;
 	}
 	uParam0->f_1 = 0;
-	uParam0->f_7B = 0;
+	uParam0->f_123 = 0;
 }
 
 int func_13(var uParam0, var uParam1, var uParam2)//Position - 0x88F
@@ -708,12 +708,12 @@ int func_13(var uParam0, var uParam1, var uParam2)//Position - 0x88F
 			DATAFILE::DATADICT_SET_STRING(iVar0, "fa", &(uParam2->f_7));
 			DATAFILE::DATADICT_SET_STRING(iVar0, "sm", &(uParam2->f_8));
 			DATAFILE::DATADICT_SET_STRING(iVar0, "kp", &(uParam2->f_9));
-			DATAFILE::DATADICT_SET_STRING(iVar0, "sv", &(uParam2->f_A));
-			DATAFILE::DATADICT_SET_STRING(iVar0, "yo", &(uParam2->f_B));
-			DATAFILE::DATADICT_SET_STRING(iVar0, "fi", &(uParam2->f_C));
-			DATAFILE::DATADICT_SET_STRING(iVar0, "rc", &(uParam2->f_D));
-			DATAFILE::DATADICT_SET_STRING(iVar0, "co", &(uParam2->f_E));
-			DATAFILE::DATADICT_SET_INT(iVar0, "su", uParam2->f_F);
+			DATAFILE::DATADICT_SET_STRING(iVar0, "sv", &(uParam2->f_10));
+			DATAFILE::DATADICT_SET_STRING(iVar0, "yo", &(uParam2->f_11));
+			DATAFILE::DATADICT_SET_STRING(iVar0, "fi", &(uParam2->f_12));
+			DATAFILE::DATADICT_SET_STRING(iVar0, "rc", &(uParam2->f_13));
+			DATAFILE::DATADICT_SET_STRING(iVar0, "co", &(uParam2->f_14));
+			DATAFILE::DATADICT_SET_INT(iVar0, "su", uParam2->f_15);
 			DATAFILE::DATAFILE_START_SAVE_TO_CLOUD("gta5/psych/index.json");
 			*uParam0++;
 			break;
@@ -801,41 +801,41 @@ int func_18()//Position - 0xA7F
 
 bool func_19()//Position - 0xA9F
 {
-	return Global_2528EC;
+	return Global_2435308;
 }
 
 struct<4> func_20(var uParam0)//Position - 0xAAB
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "SUMMARY_", 16);
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 24);
-	uParam0->f_F = iVar1;
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 24);
+	uParam0->f_15 = iVar4;
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_21(var uParam0)//Position - 0xAD4
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "COLLECT_", 16);
 	if (((func_22(110) || func_22(95)) || func_22(106)) || func_22(107))
 	{
-		StringCopy(&(uParam0->f_E), "Y", 4);
+		StringCopy(&(uParam0->f_14), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
 	else
 	{
-		StringCopy(&(uParam0->f_E), "N", 4);
+		StringCopy(&(uParam0->f_14), "N", 4);
 		StringConCat(&Var0, "N", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_E), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_14), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -845,56 +845,56 @@ int func_22(int iParam0)//Position - 0xB5C
 	{
 		return 0;
 	}
-	return Global_17C49.f_1CAD.f_63.f_3A[iParam0];
+	return Global_97353.f_7341.f_99.f_58[iParam0];
 }
 
 struct<4> func_23(var uParam0)//Position - 0xB89
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
+	int iVar5;
+	int iVar6;
+	int iVar7;
 	
 	StringCopy(&Var0, "RAND_", 16);
-	STATS::STAT_GET_INT(joaat("num_rndpeople_completed"), &iVar2, -1);
-	STATS::STAT_GET_INT(joaat("num_rndevents_completed"), &iVar3, -1);
-	iVar4 = (iVar2 + iVar3);
-	if (iVar4 > 10)
+	STATS::STAT_GET_INT(joaat("num_rndpeople_completed"), &iVar5, -1);
+	STATS::STAT_GET_INT(joaat("num_rndevents_completed"), &iVar6, -1);
+	iVar7 = (iVar5 + iVar6);
+	if (iVar7 > 10)
 	{
-		StringCopy(&(uParam0->f_D), "Y", 4);
+		StringCopy(&(uParam0->f_13), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
 	}
 	else
 	{
-		StringCopy(&(uParam0->f_D), "N", 4);
+		StringCopy(&(uParam0->f_13), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_D), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_13), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_24(var uParam0)//Position - 0xC03
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "FIT_", 16);
 	if ((((((((func_25(1, 1) > 50 && func_25(1, 2) > 50) && func_25(1, 3) > 50) && func_25(0, 1) > 50) && func_25(0, 2) > 50) && func_25(0, 3) > 50) && func_25(2, 1) > 50) && func_25(2, 2) > 50) && func_25(2, 3) > 50)
 	{
-		StringCopy(&(uParam0->f_C), "Y", 4);
+		StringCopy(&(uParam0->f_12), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
 	}
 	else
 	{
-		StringCopy(&(uParam0->f_C), "N", 4);
+		StringCopy(&(uParam0->f_12), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
-	StringIntConCat(&(uParam0->f_C), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+	StringIntConCat(&(uParam0->f_12), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1074,28 +1074,28 @@ void func_27(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD
 struct<4> func_28(var uParam0)//Position - 0xF5C
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "YOGA_", 16);
 	if (func_29(300, 1))
 	{
-		StringCopy(&(uParam0->f_B), "Y", 4);
+		StringCopy(&(uParam0->f_11), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
 	}
 	else
 	{
-		StringCopy(&(uParam0->f_B), "N", 4);
+		StringCopy(&(uParam0->f_11), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_B), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_11), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 int func_29(int iParam0, int iParam1)//Position - 0xFB9
 {
-	if (Global_17C49.f_2100[iParam0 /*12*/].f_5 == 1)
+	if (Global_97353.f_8448[iParam0 /*12*/].f_5 == 1)
 	{
 		if (iParam1 == 1)
 		{
@@ -1108,84 +1108,84 @@ int func_29(int iParam0, int iParam1)//Position - 0xFB9
 struct<4> func_30(var uParam0)//Position - 0xFE0
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "VEHS_", 16);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_cop_vehicle"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_cars"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_bikes"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_boats"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_helis"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_quadbikes"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_number_stolen_bicycles"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_cop_vehicle"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_cars"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_bikes"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_boats"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_helis"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_quadbikes"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_number_stolen_bicycles"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_cop_vehicle"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_cars"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_bikes"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_boats"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_helis"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_quadbikes"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_number_stolen_bicycles"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 100)
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_cop_vehicle"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_cars"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_bikes"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_boats"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_helis"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_quadbikes"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_number_stolen_bicycles"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_cop_vehicle"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_cars"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_bikes"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_boats"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_helis"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_quadbikes"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_number_stolen_bicycles"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_cop_vehicle"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_cars"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_bikes"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_boats"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_helis"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_quadbikes"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_number_stolen_bicycles"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 100)
 	{
-		StringCopy(&(uParam0->f_A), "Y", 4);
+		StringCopy(&(uParam0->f_10), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
 	}
 	else
 	{
-		StringCopy(&(uParam0->f_A), "N", 4);
+		StringCopy(&(uParam0->f_10), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_A), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_10), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_31(var uParam0)//Position - 0x11DD
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "PEDS_", 16);
-	STATS::STAT_GET_INT(joaat("sp0_kills_innocents"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_kills_innocents"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_kills_innocents"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 100)
+	STATS::STAT_GET_INT(joaat("sp0_kills_innocents"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_kills_innocents"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_kills_innocents"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 100)
 	{
 		StringCopy(&(uParam0->f_9), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -1195,21 +1195,21 @@ struct<4> func_31(var uParam0)//Position - 0x11DD
 		StringCopy(&(uParam0->f_9), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_9), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_9), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_32(var uParam0)//Position - 0x1272
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
+	int iVar4;
+	int iVar5;
 	
 	StringCopy(&Var0, "STOCK_", 16);
-	STATS::STAT_GET_INT(joaat("time_spent_on_stockmarket"), &iVar2, 0);
-	if (iVar2 >= 120000)
+	STATS::STAT_GET_INT(joaat("time_spent_on_stockmarket"), &iVar5, 0);
+	if (iVar5 >= 120000)
 	{
 		StringCopy(&(uParam0->f_8), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -1219,16 +1219,16 @@ struct<4> func_32(var uParam0)//Position - 0x1272
 		StringCopy(&(uParam0->f_8), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_8), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_8), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_33(var uParam0)//Position - 0x12DA
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "FAMILY_", 16);
 	if (func_34(8) && func_34(5))
@@ -1241,9 +1241,9 @@ struct<4> func_33(var uParam0)//Position - 0x12DA
 		StringCopy(&(uParam0->f_7), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_7), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_7), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1251,7 +1251,7 @@ int func_34(int iParam0)//Position - 0x133F
 {
 	if (iParam0 < 9)
 	{
-		return MISC::IS_BIT_SET(Global_17C49.f_3FE5.f_AF[iParam0 /*19*/].f_12, 0);
+		return MISC::IS_BIT_SET(Global_97353.f_16357.f_175[iParam0 /*19*/].f_18, 0);
 	}
 	return 0;
 }
@@ -1259,7 +1259,7 @@ int func_34(int iParam0)//Position - 0x133F
 struct<4> func_35(var uParam0)//Position - 0x1369
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "PROS_", 16);
 	if ((func_36(1) > 0 || func_36(0) > 0) || func_36(2) > 0)
@@ -1272,9 +1272,9 @@ struct<4> func_35(var uParam0)//Position - 0x1369
 		StringCopy(&(uParam0->f_6), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_6), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_6), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1283,15 +1283,15 @@ int func_36(int iParam0)//Position - 0x13DF
 	switch (iParam0)
 	{
 		case 0:
-			return Global_17C49.f_206F.f_5A[0];
+			return Global_97353.f_8303.f_90[0];
 			break;
 		
 		case 1:
-			return Global_17C49.f_206F.f_5A[1];
+			return Global_97353.f_8303.f_90[1];
 			break;
 		
 		case 2:
-			return Global_17C49.f_206F.f_5A[2];
+			return Global_97353.f_8303.f_90[2];
 			break;
 	}
 	return 0;
@@ -1300,158 +1300,158 @@ int func_36(int iParam0)//Position - 0x13DF
 struct<4> func_37(var uParam0)//Position - 0x1437
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
 	int iVar5;
+	int iVar6;
+	int iVar7;
+	int iVar8;
 	
 	StringCopy(&Var0, "STRIP_", 16);
-	STATS::STAT_GET_INT(joaat("sp0_lap_danced_bought"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_lap_danced_bought"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_lap_danced_bought"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp0_money_spent_in_strip_clubs"), &iVar4, 0);
-	iVar5 = (iVar5 + iVar4);
-	STATS::STAT_GET_INT(joaat("sp1_money_spent_in_strip_clubs"), &iVar4, 1);
-	iVar5 = (iVar5 + iVar4);
-	STATS::STAT_GET_INT(joaat("sp2_money_spent_in_strip_clubs"), &iVar4, 2);
-	iVar5 = (iVar5 + iVar4);
-	if (iVar3 >= 3 || iVar5 >= 100)
+	STATS::STAT_GET_INT(joaat("sp0_lap_danced_bought"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_lap_danced_bought"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_lap_danced_bought"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp0_money_spent_in_strip_clubs"), &iVar7, 0);
+	iVar8 = (iVar8 + iVar7);
+	STATS::STAT_GET_INT(joaat("sp1_money_spent_in_strip_clubs"), &iVar7, 1);
+	iVar8 = (iVar8 + iVar7);
+	STATS::STAT_GET_INT(joaat("sp2_money_spent_in_strip_clubs"), &iVar7, 2);
+	iVar8 = (iVar8 + iVar7);
+	if (iVar6 >= 3 || iVar8 >= 100)
 	{
 		StringCopy(&(uParam0->f_5), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_5), "N", 4);
 		StringConCat(&Var0, "N", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_5), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_5), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_38(var uParam0)//Position - 0x151C
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "CASH_", 16);
-	STATS::STAT_GET_INT(joaat("sp0_money_total_spent"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp1_money_total_spent"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("sp2_money_total_spent"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 1000000)
+	STATS::STAT_GET_INT(joaat("sp0_money_total_spent"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp1_money_total_spent"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("sp2_money_total_spent"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 1000000)
 	{
 		StringCopy(&(uParam0->f_3), "SP", 8);
 		StringConCat(&Var0, "SP", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 14);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 14);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_3), "SA", 8);
 		StringConCat(&Var0, "SA", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
-	StringIntConCat(&(uParam0->f_3), iVar1, 8);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_3), iVar4, 8);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_39(var uParam0)//Position - 0x15BC
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
+	int iVar5;
+	int iVar6;
+	int iVar7;
 	
 	StringCopy(&Var0, "CHAR_", 16);
-	iVar2 = 0;
-	iVar4 = 0;
-	STATS::STAT_GET_INT(joaat("sp0_total_playing_time"), &iVar4, 0);
-	STATS::STAT_GET_INT(joaat("sp1_total_playing_time"), &iVar3, 1);
-	if (iVar3 > iVar4)
+	iVar5 = 0;
+	iVar7 = 0;
+	STATS::STAT_GET_INT(joaat("sp0_total_playing_time"), &iVar7, 0);
+	STATS::STAT_GET_INT(joaat("sp1_total_playing_time"), &iVar6, 1);
+	if (iVar6 > iVar7)
 	{
-		iVar4 = iVar3;
-		iVar2 = 1;
+		iVar7 = iVar6;
+		iVar5 = 1;
 	}
-	STATS::STAT_GET_INT(joaat("sp2_total_playing_time"), &iVar3, 2);
-	if (iVar3 > iVar4)
+	STATS::STAT_GET_INT(joaat("sp2_total_playing_time"), &iVar6, 2);
+	if (iVar6 > iVar7)
 	{
-		iVar4 = iVar3;
-		iVar2 = 2;
+		iVar7 = iVar6;
+		iVar5 = 2;
 	}
-	if (iVar2 == 0)
+	if (iVar5 == 0)
 	{
 		StringCopy(&(uParam0->f_2), "M", 4);
 		StringConCat(&Var0, "M", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
-	else if (iVar2 == 1)
+	else if (iVar5 == 1)
 	{
 		StringCopy(&(uParam0->f_2), "F", 4);
 		StringConCat(&Var0, "F", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_2), "T", 4);
 		StringConCat(&Var0, "T", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_2), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_2), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_40(var uParam0)//Position - 0x168A
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "STORY_", 16);
 	if (func_22(135))
 	{
 		StringCopy(&(uParam0->f_1), "M", 4);
 		StringConCat(&Var0, "M", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
 	else if (func_22(136))
 	{
 		StringCopy(&(uParam0->f_1), "T", 4);
 		StringConCat(&Var0, "T", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 10);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 10);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_1), "B", 4);
 		StringConCat(&Var0, "B", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
-	StringIntConCat(&(uParam0->f_1), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_1), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_41(var uParam0)//Position - 0x1715
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "INTRO_", 16);
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 21);
-	*uParam0 = iVar1;
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 21);
+	*uParam0 = iVar4;
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1474,48 +1474,48 @@ void func_43()//Position - 0x174F
 
 void func_44()//Position - 0x177E
 {
-	if (!Global_3839.f_1 == 1)
+	if (!Global_14393.f_1 == 1)
 	{
 		if (func_48(0))
 		{
 			func_45(0);
 		}
-		MISC::SET_BIT(&Global_8D8, 2);
+		MISC::SET_BIT(&Global_2264, 2);
 	}
 }
 
 void func_45(int iParam0)//Position - 0x17A6
 {
-	if (Global_38D7)
+	if (Global_14551)
 	{
 		func_47(0, 0);
 	}
-	if (Global_3839.f_1 == 10 || Global_3839.f_1 == 9)
+	if (Global_14393.f_1 == 10 || Global_14393.f_1 == 9)
 	{
-		MISC::SET_BIT(&Global_8D8, 16);
+		MISC::SET_BIT(&Global_2264, 16);
 	}
 	if (AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
 	{
 		AUDIO::STOP_SCRIPTED_CONVERSATION(0);
 	}
-	Global_3D4C = 5;
+	Global_15692 = 5;
 	if (iParam0 == 1)
 	{
-		MISC::SET_BIT(&Global_8D7, 30);
+		MISC::SET_BIT(&Global_2263, 30);
 	}
 	else
 	{
-		MISC::CLEAR_BIT(&Global_8D7, 30);
+		MISC::CLEAR_BIT(&Global_2263, 30);
 	}
 	if (!func_46())
 	{
-		Global_3839.f_1 = 3;
+		Global_14393.f_1 = 3;
 	}
 }
 
 int func_46()//Position - 0x1816
 {
-	if (Global_3839.f_1 == 1 || Global_3839.f_1 == 0)
+	if (Global_14393.f_1 == 1 || Global_14393.f_1 == 0)
 	{
 		return 1;
 	}
@@ -1528,26 +1528,26 @@ void func_47(bool bParam0, bool bParam1)//Position - 0x183D
 	{
 		if (func_48(0))
 		{
-			Global_38D7 = 1;
+			Global_14551 = 1;
 			if (bParam1)
 			{
-				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_37FA);
+				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_14330);
 			}
-			Global_37F1 = { Global_3803[Global_3802 /*3*/] };
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_37F1);
+			Global_14321 = { Global_14339[Global_14338 /*3*/] };
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_14321);
 		}
 	}
-	else if (Global_38D7 == 1)
+	else if (Global_14551 == 1)
 	{
-		Global_38D7 = 0;
-		Global_37F1 = { Global_380A[Global_3802 /*3*/] };
+		Global_14551 = 0;
+		Global_14321 = { Global_14346[Global_14338 /*3*/] };
 		if (bParam1)
 		{
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_37FA);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_14330);
 		}
 		else
 		{
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_37F1);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_14321);
 		}
 	}
 }
@@ -1556,9 +1556,9 @@ int func_48(int iParam0)//Position - 0x18B1
 {
 	if (iParam0 == 1)
 	{
-		if (Global_3839.f_1 > 3)
+		if (Global_14393.f_1 > 3)
 		{
-			if (MISC::IS_BIT_SET(Global_8D7, 14))
+			if (MISC::IS_BIT_SET(Global_2263, 14))
 			{
 				return 1;
 			}
@@ -1576,7 +1576,7 @@ int func_48(int iParam0)//Position - 0x18B1
 	{
 		return 1;
 	}
-	if (Global_3839.f_1 > 3)
+	if (Global_14393.f_1 > 3)
 	{
 		return 1;
 	}
@@ -1593,7 +1593,7 @@ void func_49(bool bParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 		func_56(1);
 		HUD::THEFEED_FLUSH_QUEUE();
 		HUD::THEFEED_PAUSE();
-		if (Global_3839.f_1 > 3)
+		if (Global_14393.f_1 > 3)
 		{
 			if (AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
 			{
@@ -1601,20 +1601,20 @@ void func_49(bool bParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 			}
 			if (!func_46())
 			{
-				Global_3839.f_1 = 3;
+				Global_14393.f_1 = 3;
 			}
-			Global_3D4C = 5;
+			Global_15692 = 5;
 		}
 		func_55(1, iParam3, iParam2);
-		Global_D5E4 = 1;
-		Global_105F5 = 1;
-		Global_10A93 = 1;
+		Global_54756 = 1;
+		Global_67061 = 1;
+		Global_68243 = 1;
 	}
 	else
 	{
 		func_56(0);
 		HUD::THEFEED_RESUME();
-		Global_D5E4 = 0;
+		Global_54756 = 0;
 		if (bParam1)
 		{
 			GRAPHICS::CASCADE_SHADOWS_INIT_SESSION();
@@ -1626,7 +1626,7 @@ void func_49(bool bParam0, bool bParam1, int iParam2, int iParam3)//Position - 0
 		{
 			ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), 0);
 		}
-		Global_10A93 = 0;
+		Global_68243 = 0;
 	}
 }
 
@@ -1643,7 +1643,7 @@ int func_50(int iParam0)//Position - 0x19DC
 			return 1;
 		}
 	}
-	if (MISC::IS_BIT_SET(Global_24D5B9[iParam0 /*254*/].f_C2, 2))
+	if (MISC::IS_BIT_SET(Global_2414009[iParam0 /*254*/].f_194, 2))
 	{
 		return 1;
 	}
@@ -1652,7 +1652,7 @@ int func_50(int iParam0)//Position - 0x19DC
 
 bool func_51()//Position - 0x1A1D
 {
-	return MISC::IS_BIT_SET(Global_240005, 3);
+	return MISC::IS_BIT_SET(Global_2359301, 3);
 }
 
 bool func_52(int iParam0, int iParam1)//Position - 0x1A2E
@@ -1665,7 +1665,7 @@ bool func_52(int iParam0, int iParam1)//Position - 0x1A2E
 	}
 	else
 	{
-		bVar0 = Global_182604[iParam0 /*324*/].f_B4 == 8;
+		bVar0 = Global_1582596[iParam0 /*324*/].f_180 == 8;
 	}
 	if (iParam1 == 1)
 	{
@@ -1687,7 +1687,7 @@ int func_53(int iParam0, bool bParam1)//Position - 0x1A79
 	{
 		iVar1 = func_54();
 	}
-	if (Global_141425[iVar1] == 1)
+	if (Global_1315877[iVar1] == 1)
 	{
 		if (bParam1)
 		{
@@ -1696,7 +1696,7 @@ int func_53(int iParam0, bool bParam1)//Position - 0x1A79
 	}
 	else
 	{
-		iVar0 = Global_1407DB[iVar1];
+		iVar0 = Global_1312731[iVar1];
 		if (bParam1)
 		{
 		}
@@ -1706,7 +1706,7 @@ int func_53(int iParam0, bool bParam1)//Position - 0x1A79
 
 int func_54()//Position - 0x1ABA
 {
-	return Global_1407E1;
+	return Global_1312737;
 }
 
 int func_55(int iParam0, var uParam1, var uParam2)//Position - 0x1AC6
@@ -1729,11 +1729,11 @@ void func_56(int iParam0)//Position - 0x1AF7
 {
 	if (iParam0 == 1)
 	{
-		MISC::SET_BIT(&Global_8D7, 13);
+		MISC::SET_BIT(&Global_2263, 13);
 	}
 	else
 	{
-		MISC::CLEAR_BIT(&Global_8D7, 13);
+		MISC::CLEAR_BIT(&Global_2263, 13);
 	}
 }
 

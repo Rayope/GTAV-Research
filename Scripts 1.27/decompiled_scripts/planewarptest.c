@@ -18,7 +18,7 @@
 	var uLocal_16 = 0;
 	var uLocal_17 = 0;
 	struct<3> Local_18[2];
-	float fLocal_19[2] = { 0f, 0f };
+	float fLocal_25[2] = { 0f, 0f };
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -46,14 +46,14 @@ void __EntryFunction__()//Position - 0x0
 	}
 	Local_18[0 /*3*/] = { 1169.976f, 3592.572f, 32.6481f };
 	Local_18[1 /*3*/] = { 1215.738f, 3586.608f, 33.5131f };
-	fLocal_19[0] = 277.7043f;
-	fLocal_19[1] = 77.1113f;
+	fLocal_25[0] = 277.7043f;
+	fLocal_25[1] = 77.1113f;
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))
 	{
 		ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), 1220.202f, 3596.281f, 33.259f, 1, 0, 0, 1);
 	}
 	STREAMING::LOAD_SCENE(1220.202f, 3596.281f, 33.259f);
-	uLocal_17 = VEHICLE::CREATE_VEHICLE(joaat("cuban800"), Local_18[0 /*3*/], fLocal_19[0], 1, 1);
+	uLocal_17 = VEHICLE::CREATE_VEHICLE(joaat("cuban800"), Local_18[0 /*3*/], fLocal_25[0], 1, 1);
 	VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(uLocal_17);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cuban800"));
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))

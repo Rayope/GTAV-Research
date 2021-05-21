@@ -1,0 +1,16 @@
+num_missions_completed (int): 0x17B41
+num_missions_available (int): 0x17B30
+num_minigames_completed (int): 0x17B42
+num_minigames_available (int): 0x17B31
+num_oddjobs_completed (int): 0x17B43
+num_oddjobs_available (int): 0x17B32
+num_rndpeople_completed (int): 0x17B44
+num_rndpeople_available (int): 0x17B33
+num_rndevents_completed (int): 0x17B37 or 0x17B45
+num_rndevents_available (int): 0x17B37
+num_misc_completed (int): 0x2F68D (written 0x17B47 + 0x17B46 in code)
+num_misc_available (int): 0x2F66B (written 0x17B36 + 0x17B35 in code)
+total_progress_made (float): 0x1AC56
+percent_story_missions (int): 0x17B48
+percent_ambient_missions (int): 0x17B49
+percent_oddjobs (int): 0x17B4A

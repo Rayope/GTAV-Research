@@ -18,8 +18,8 @@
 	var uLocal_16 = 0;
 	int iLocal_17 = 0;
 	struct<3> Local_18 = { 0, 0, 0 } ;
-	int iLocal_19 = 0;
-	var uLocal_20 = 0;
+	int iLocal_21 = 0;
+	var uScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -37,7 +37,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_14 = 0.001f;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (MISC::IS_BIT_SET(Global_146527, 1))
+		if (MISC::IS_BIT_SET(Global_1336615, 1))
 		{
 			func_17();
 		}
@@ -46,7 +46,7 @@ void __EntryFunction__()//Position - 0x0
 			NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, 0, -1);
 			func_14(0, -1, 0);
 			MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(0);
-			iLocal_19 = 1;
+			iLocal_21 = 1;
 		}
 	}
 	else if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
@@ -56,29 +56,29 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (iLocal_19 == 1)
+		if (iLocal_21 == 1)
 		{
 			if (func_3())
 			{
 				func_17();
 			}
 		}
-		if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_20))
+		if (ENTITY::DOES_ENTITY_EXIST(uScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(uScriptParam_20))
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(uScriptParam_0))
 			{
 				switch (iLocal_17)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_20))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(uScriptParam_0))
 						{
-							Local_18 = { ENTITY::GET_ENTITY_COORDS(uScriptParam_20, 1) };
+							Local_18 = { ENTITY::GET_ENTITY_COORDS(uScriptParam_0, 1) };
 							iLocal_17 = 1;
 						}
 						break;
 					
 					case 1:
-						if ((OBJECT::HAS_OBJECT_BEEN_BROKEN(uScriptParam_20) && ENTITY::IS_ENTITY_VISIBLE(uScriptParam_20)) && !ENTITY::IS_ENTITY_A_MISSION_ENTITY(uScriptParam_20))
+						if ((OBJECT::HAS_OBJECT_BEEN_BROKEN(uScriptParam_0) && ENTITY::IS_ENTITY_VISIBLE(uScriptParam_0)) && !ENTITY::IS_ENTITY_A_MISSION_ENTITY(uScriptParam_0))
 						{
 							func_1();
 							iLocal_17 = 2;
@@ -139,7 +139,7 @@ int func_2(int iParam0, int iParam1)//Position - 0x195
 		case 1:
 			if (iParam0 > 0)
 			{
-				fVar0 = (SYSTEM::TO_FLOAT(iParam0) * Global_40001);
+				fVar0 = (SYSTEM::TO_FLOAT(iParam0) * Global_262145);
 				iParam0 = SYSTEM::ROUND(fVar0);
 			}
 			break;
@@ -159,7 +159,7 @@ int func_3()//Position - 0x1D6
 	{
 		return 1;
 	}
-	if (Global_141422 == 0)
+	if (Global_1315874 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -170,7 +170,7 @@ int func_3()//Position - 0x1D6
 	{
 		return 1;
 	}
-	if (Global_252FC2)
+	if (Global_2437058)
 	{
 		return 1;
 	}
@@ -220,12 +220,12 @@ int func_4()//Position - 0x269
 
 int func_5()//Position - 0x29D
 {
-	return Global_5F7C;
+	return Global_24444;
 }
 
 bool func_6()//Position - 0x2A8
 {
-	return Global_250CE3.f_23C;
+	return Global_2428131.f_572;
 }
 
 int func_7(int iParam0)//Position - 0x2B7
@@ -239,12 +239,12 @@ int func_7(int iParam0)//Position - 0x2B7
 
 bool func_8()//Position - 0x2CE
 {
-	return Global_2528A6;
+	return Global_2435238;
 }
 
 bool func_9()//Position - 0x2DA
 {
-	return Global_250CE3.f_237;
+	return Global_2428131.f_567;
 }
 
 void func_10(var uParam0)//Position - 0x2E9
@@ -252,7 +252,7 @@ void func_10(var uParam0)//Position - 0x2E9
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	struct<3> Var3;
+	struct<3> Var4;
 	
 	iVar0 = 0;
 	while (iVar0 < SCRIPT::GET_NUMBER_OF_EVENTS(1))
@@ -268,8 +268,8 @@ void func_10(var uParam0)//Position - 0x2E9
 					break;
 				
 				case 2:
-					SCRIPT::GET_EVENT_DATA(1, iVar0, &Var3, 3);
-					if (Var3.f_2 == 53)
+					SCRIPT::GET_EVENT_DATA(1, iVar0, &Var4, 3);
+					if (Var4.f_2 == 53)
 					{
 						*uParam0 = 1;
 					}
@@ -283,29 +283,29 @@ void func_10(var uParam0)//Position - 0x2E9
 void func_11(int iParam0)//Position - 0x359
 {
 	struct<3> Var0;
-	var uVar1;
-	var uVar2;
-	bool bVar3;
+	var uVar3;
+	var uVar4;
+	bool bVar5;
 	
 	if (SCRIPT::GET_EVENT_DATA(1, iParam0, &Var0, 3))
 	{
 		if (func_13(Var0.f_1, 1, 1))
 		{
-			uVar1 = PLAYER::GET_PLAYER_PED(Var0.f_1);
-			if (ENTITY::DOES_ENTITY_EXIST(uVar1))
+			uVar3 = PLAYER::GET_PLAYER_PED(Var0.f_1);
+			if (ENTITY::DOES_ENTITY_EXIST(uVar3))
 			{
-				if (PED::IS_PED_IN_ANY_VEHICLE(uVar1, 0))
+				if (PED::IS_PED_IN_ANY_VEHICLE(uVar3, 0))
 				{
-					uVar2 = PED::GET_VEHICLE_PED_IS_IN(uVar1, 0);
-					if (VEHICLE::IS_VEHICLE_WINDOW_INTACT(uVar2, Var0.f_2) && NETWORK::NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT())
+					uVar4 = PED::GET_VEHICLE_PED_IS_IN(uVar3, 0);
+					if (VEHICLE::IS_VEHICLE_WINDOW_INTACT(uVar4, Var0.f_2) && NETWORK::NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT())
 					{
-						if (func_12(uVar2, &bVar3))
+						if (func_12(uVar4, &bVar5))
 						{
-							VEHICLE::REMOVE_VEHICLE_WINDOW(uVar2, Var0.f_2);
+							VEHICLE::REMOVE_VEHICLE_WINDOW(uVar4, Var0.f_2);
 						}
-						if (bVar3)
+						if (bVar5)
 						{
-							ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&uVar2);
+							ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&uVar4);
 						}
 					}
 				}
@@ -353,7 +353,7 @@ int func_13(var uParam0, bool bParam1, bool bParam2)//Position - 0x428
 		}
 		if (bParam2)
 		{
-			if (!Global_24F57C.f_3[iVar0])
+			if (!Global_2422140.f_3[iVar0])
 			{
 				return 0;
 			}
@@ -436,7 +436,7 @@ int func_14(int iParam0, int iParam1, bool bParam2)//Position - 0x46C
 	}
 	if (iParam1 > -1)
 	{
-		Global_1406F8 = iVar0;
+		Global_1312504 = iVar0;
 	}
 	if (iParam0 == 0)
 	{
@@ -468,7 +468,7 @@ int func_14(int iParam0, int iParam1, bool bParam2)//Position - 0x46C
 
 bool func_15()//Position - 0x581
 {
-	return Global_141422;
+	return Global_1315874;
 }
 
 void func_16()//Position - 0x58D

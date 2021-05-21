@@ -108,7 +108,7 @@ int func_2(int iParam0)//Position - 0x10C
 {
 	if (func_3(iParam0))
 	{
-		return Global_17C49.f_744E[iParam0 /*29*/];
+		return Global_97353.f_29774[iParam0 /*29*/];
 	}
 	else if (iParam0 != 145)
 	{

@@ -46,7 +46,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_5();
 		}
-		if (func_1(&uLocal_20, &Global_42098))
+		if (func_1(&uLocal_20, &Global_270488))
 		{
 			func_5();
 		}
@@ -60,8 +60,8 @@ int func_1(var uParam0, var uParam1)//Position - 0x5E
 	int iVar1;
 	int iVar2;
 	struct<6> Var3;
-	int iVar4;
-	int iVar5;
+	int iVar9;
+	int iVar10;
 	
 	if (uParam0->f_2)
 	{
@@ -79,18 +79,18 @@ int func_1(var uParam0, var uParam1)//Position - 0x5E
 		if (NETWORK::NETWORK_CAN_BAIL())
 		{
 			func_3(*uParam0, &Var3);
-			iVar4 = 1534;
+			iVar9 = 1534;
 			iVar2 = uParam0->f_4;
 			while (iVar2 <= uParam0->f_4 + 5)
 			{
-				if (iVar2 < iVar4)
+				if (iVar2 < iVar9)
 				{
 					if (iVar2 >= Var3.f_4 && iVar2 != 25)
 					{
-						iVar5 = func_2(iVar2);
-						if (iVar5 != 0 && Var3.f_5 != 0)
+						iVar10 = func_2(iVar2);
+						if (iVar10 != 0 && Var3.f_5 != 0)
 						{
-							if (NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar5, Var3.f_5, &fVar0))
+							if (NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar10, Var3.f_5, &fVar0))
 							{
 								if (fVar0 > Var3.f_1 || fVar0 < Var3)
 								{
@@ -99,7 +99,7 @@ int func_1(var uParam0, var uParam1)//Position - 0x5E
 									uParam0->f_1 = MISC::GET_GAME_TIMER();
 								}
 							}
-							else if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(iVar5, Var3.f_5, &iVar1))
+							else if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(iVar10, Var3.f_5, &iVar1))
 							{
 								if (iVar1 > Var3.f_3 || iVar1 < Var3.f_2)
 								{
@@ -14123,7 +14123,7 @@ int func_6()//Position - 0x12FF7
 	{
 		return 1;
 	}
-	if (Global_141422 == 0)
+	if (Global_1315874 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -14134,7 +14134,7 @@ int func_6()//Position - 0x12FF7
 	{
 		return 1;
 	}
-	if (Global_252FC2)
+	if (Global_2437058)
 	{
 		return 1;
 	}
@@ -14184,12 +14184,12 @@ int func_7()//Position - 0x1308A
 
 int func_8()//Position - 0x130BE
 {
-	return Global_5F7C;
+	return Global_24444;
 }
 
 bool func_9()//Position - 0x130C9
 {
-	return Global_250CE3.f_23C;
+	return Global_2428131.f_572;
 }
 
 int func_10(int iParam0)//Position - 0x130D8
@@ -14203,12 +14203,12 @@ int func_10(int iParam0)//Position - 0x130D8
 
 bool func_11()//Position - 0x130EF
 {
-	return Global_2528A6;
+	return Global_2435238;
 }
 
 bool func_12()//Position - 0x130FB
 {
-	return Global_250CE3.f_237;
+	return Global_2428131.f_567;
 }
 
 void func_13(var uParam0)//Position - 0x1310A
@@ -14216,7 +14216,7 @@ void func_13(var uParam0)//Position - 0x1310A
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	struct<3> Var3;
+	struct<3> Var4;
 	
 	iVar0 = 0;
 	while (iVar0 < SCRIPT::GET_NUMBER_OF_EVENTS(1))
@@ -14232,8 +14232,8 @@ void func_13(var uParam0)//Position - 0x1310A
 					break;
 				
 				case 2:
-					SCRIPT::GET_EVENT_DATA(1, iVar0, &Var3, 3);
-					if (Var3.f_2 == 53)
+					SCRIPT::GET_EVENT_DATA(1, iVar0, &Var4, 3);
+					if (Var4.f_2 == 53)
 					{
 						*uParam0 = 1;
 					}
@@ -14247,29 +14247,29 @@ void func_13(var uParam0)//Position - 0x1310A
 void func_14(int iParam0)//Position - 0x1317A
 {
 	struct<3> Var0;
-	var uVar1;
-	var uVar2;
-	bool bVar3;
+	var uVar3;
+	var uVar4;
+	bool bVar5;
 	
 	if (SCRIPT::GET_EVENT_DATA(1, iParam0, &Var0, 3))
 	{
 		if (func_16(Var0.f_1, 1, 1))
 		{
-			uVar1 = PLAYER::GET_PLAYER_PED(Var0.f_1);
-			if (ENTITY::DOES_ENTITY_EXIST(uVar1))
+			uVar3 = PLAYER::GET_PLAYER_PED(Var0.f_1);
+			if (ENTITY::DOES_ENTITY_EXIST(uVar3))
 			{
-				if (PED::IS_PED_IN_ANY_VEHICLE(uVar1, 0))
+				if (PED::IS_PED_IN_ANY_VEHICLE(uVar3, 0))
 				{
-					uVar2 = PED::GET_VEHICLE_PED_IS_IN(uVar1, 0);
-					if (VEHICLE::IS_VEHICLE_WINDOW_INTACT(uVar2, Var0.f_2) && NETWORK::NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT())
+					uVar4 = PED::GET_VEHICLE_PED_IS_IN(uVar3, 0);
+					if (VEHICLE::IS_VEHICLE_WINDOW_INTACT(uVar4, Var0.f_2) && NETWORK::NETWORK_GET_THIS_SCRIPT_IS_NETWORK_SCRIPT())
 					{
-						if (func_15(uVar2, &bVar3))
+						if (func_15(uVar4, &bVar5))
 						{
-							VEHICLE::REMOVE_VEHICLE_WINDOW(uVar2, Var0.f_2);
+							VEHICLE::REMOVE_VEHICLE_WINDOW(uVar4, Var0.f_2);
 						}
-						if (bVar3)
+						if (bVar5)
 						{
-							ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&uVar2);
+							ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&uVar4);
 						}
 					}
 				}
@@ -14317,7 +14317,7 @@ int func_16(var uParam0, bool bParam1, bool bParam2)//Position - 0x13249
 		}
 		if (bParam2)
 		{
-			if (!Global_24F57C.f_3[iVar0])
+			if (!Global_2422140.f_3[iVar0])
 			{
 				return 0;
 			}

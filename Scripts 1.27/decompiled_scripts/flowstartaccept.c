@@ -90,8 +90,8 @@ void __EntryFunction__()//Position - 0x0
 		func_3(1, 1);
 		func_1();
 	}
-	Global_10BA2.f_1 = 0;
-	MISC::SET_BIT(&(Global_17C49.f_204E.f_19), 0);
+	Global_68514.f_1 = 0;
+	MISC::SET_BIT(&(Global_97353.f_8270.f_25), 0);
 	func_6();
 }
 
@@ -101,18 +101,18 @@ int func_1()//Position - 0x17A
 	{
 		return 0;
 	}
-	if (Global_15F91.f_8)
+	if (Global_90001.f_8)
 	{
-		if (Global_15F91.f_A > 0)
+		if (Global_90001.f_10 > 0)
 		{
 			return 0;
 		}
 	}
-	else if (Global_15F91.f_A > 1)
+	else if (Global_90001.f_10 > 1)
 	{
 		return 0;
 	}
-	Global_15F91.f_A++;
+	Global_90001.f_10++;
 	return 1;
 }
 
@@ -122,13 +122,13 @@ int func_2(bool bParam0)//Position - 0x1C5
 	{
 		return 1;
 	}
-	return MISC::IS_BIT_SET(Global_10B8D, 0);
+	return MISC::IS_BIT_SET(Global_68493, 0);
 }
 
 void func_3(int iParam0, int iParam1)//Position - 0x1F0
 {
-	Global_15F91.f_7 = iParam0;
-	Global_15F91.f_8 = iParam1;
+	Global_90001.f_7 = iParam0;
+	Global_90001.f_8 = iParam1;
 }
 
 void func_4(var uParam0)//Position - 0x208

@@ -19,16 +19,16 @@
 	var uLocal_17 = 0;
 	var uLocal_18 = 0;
 	var uLocal_19[45] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_20[19] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_21[76] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_22[102] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_23[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_24 = 0;
-	bool bLocal_25 = 0;
-	var uLocal_26[1] = { 0 };
-	int iLocal_27 = 0;
-	var uLocal_28[1] = { 0 };
-	int iLocal_29 = 0;
+	var uLocal_65[19] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_85[76] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_162[102] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_265[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_275 = 0;
+	bool bLocal_276 = 0;
+	var uLocal_277[1] = { 0 };
+	int iLocal_279 = 0;
+	var uLocal_280[1] = { 0 };
+	int iLocal_282 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -53,12 +53,12 @@ void __EntryFunction__()//Position - 0x0
 	{
 		if (func_23(13) || func_23(14))
 		{
-			if (bLocal_25)
+			if (bLocal_276)
 			{
 				func_15();
 			}
 		}
-		else if (!bLocal_25)
+		else if (!bLocal_276)
 		{
 			func_24();
 		}
@@ -70,33 +70,33 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x84
 {
-	if (!iLocal_24)
+	if (!iLocal_275)
 	{
 		if (func_13(75))
 		{
 			func_10();
-			iLocal_24 = 1;
+			iLocal_275 = 1;
 		}
 	}
-	if (!iLocal_27)
+	if (!iLocal_279)
 	{
 		if (func_13(75))
 		{
 			if (func_9())
 			{
 				func_6();
-				iLocal_27 = 1;
+				iLocal_279 = 1;
 			}
 		}
 	}
-	if (!iLocal_29)
+	if (!iLocal_282)
 	{
 		if (func_5(62))
 		{
 			if (func_9())
 			{
 				func_2();
-				iLocal_29 = 1;
+				iLocal_282 = 1;
 			}
 		}
 	}
@@ -110,23 +110,23 @@ void func_2()//Position - 0xE2
 	}
 }
 
-void func_3(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bParam4)//Position - 0x108
+void func_3(int iParam0, int iParam1, struct<3> Param2, bool bParam5, bool bParam6)//Position - 0x108
 {
 	int iVar0;
 	
 	iVar0 = 0;
 	MISC::SET_BIT(&iVar0, 2);
 	MISC::SET_BIT(&iVar0, 1);
-	if (bParam4)
+	if (bParam6)
 	{
 		MISC::SET_BIT(&iVar0, 4);
 	}
-	if (bParam3)
+	if (bParam5)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	uLocal_28[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_4(iParam0), Param2, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_28[iParam0], 600000);
+	uLocal_280[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_4(iParam0), Param2, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_280[iParam0], 600000);
 }
 
 Vector3 func_4(int iParam0)//Position - 0x165
@@ -146,7 +146,7 @@ int func_5(int iParam0)//Position - 0x192
 	{
 		return 0;
 	}
-	return Global_17C49.f_1CAD.f_148[iParam0 /*6*/];
+	return Global_97353.f_7341.f_328[iParam0 /*6*/];
 }
 
 void func_6()//Position - 0x1BE
@@ -157,23 +157,23 @@ void func_6()//Position - 0x1BE
 	}
 }
 
-void func_7(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bParam4)//Position - 0x1E4
+void func_7(int iParam0, int iParam1, struct<3> Param2, bool bParam5, bool bParam6)//Position - 0x1E4
 {
 	int iVar0;
 	
 	iVar0 = 0;
 	MISC::SET_BIT(&iVar0, 2);
 	MISC::SET_BIT(&iVar0, 1);
-	if (bParam4)
+	if (bParam6)
 	{
 		MISC::SET_BIT(&iVar0, 4);
 	}
-	if (bParam3)
+	if (bParam5)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	uLocal_26[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_8(iParam0), Param2, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_26[iParam0], 600000);
+	uLocal_277[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_8(iParam0), Param2, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_277[iParam0], 600000);
 }
 
 Vector3 func_8(int iParam0)//Position - 0x241
@@ -200,12 +200,12 @@ int func_9()//Position - 0x26E
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (MISC::IS_BIT_SET(Global_17C49.f_29C.f_2AB, 7))
+		if (MISC::IS_BIT_SET(Global_97353.f_668.f_683, 7))
 		{
 			return 1;
 		}
 	}
-	if (Global_20258 == 2)
+	if (Global_131672 == 2)
 	{
 		return 1;
 	}
@@ -241,7 +241,7 @@ void func_10()//Position - 0x2F1
 	func_11(8, joaat("pickup_weapon_stickybomb"), 0f, 0f, 0f, 1, 1);
 }
 
-void func_11(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bParam4)//Position - 0x3C1
+void func_11(int iParam0, int iParam1, struct<3> Param2, bool bParam5, bool bParam6)//Position - 0x3C1
 {
 	int iVar0;
 	
@@ -251,7 +251,7 @@ void func_11(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bPar
 		MISC::SET_BIT(&iVar0, 2);
 		MISC::SET_BIT(&iVar0, 4);
 		MISC::SET_BIT(&iVar0, 1);
-		if (bParam3)
+		if (bParam5)
 		{
 			MISC::SET_BIT(&iVar0, 3);
 		}
@@ -260,17 +260,17 @@ void func_11(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bPar
 	{
 		MISC::SET_BIT(&iVar0, 2);
 		MISC::SET_BIT(&iVar0, 1);
-		if (bParam4)
+		if (bParam6)
 		{
 			MISC::SET_BIT(&iVar0, 4);
 		}
-		if (bParam3)
+		if (bParam5)
 		{
 			MISC::SET_BIT(&iVar0, 3);
 		}
 	}
-	uLocal_23[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_12(iParam0), Param2, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_23[iParam0], 600000);
+	uLocal_265[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_12(iParam0), Param2, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_265[iParam0], 600000);
 }
 
 Vector3 func_12(int iParam0)//Position - 0x44C
@@ -322,66 +322,66 @@ int func_13(int iParam0)//Position - 0x551
 	{
 		return 0;
 	}
-	return Global_17C49.f_1CAD.f_63.f_3A[iParam0];
+	return Global_97353.f_7341.f_99.f_58[iParam0];
 }
 
 void func_14()//Position - 0x57E
 {
-	switch (Global_606C)
+	switch (Global_24684)
 	{
 		case 0:
 			break;
 		
 		case 1:
-			switch (Global_606D)
+			switch (Global_24685)
 			{
 				case 0:
-					if (OBJECT::DOES_PICKUP_EXIST(uLocal_19[Global_606E]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_19[Global_606E]))
+					if (OBJECT::DOES_PICKUP_EXIST(uLocal_19[Global_24686]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_19[Global_24686]))
 					{
-						Global_606F = 0;
+						Global_24687 = 0;
 					}
 					else
 					{
-						Global_606F = 1;
+						Global_24687 = 1;
 					}
 					break;
 				
 				case 1:
-					if (OBJECT::DOES_PICKUP_EXIST(uLocal_21[Global_606E]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_21[Global_606E]))
+					if (OBJECT::DOES_PICKUP_EXIST(uLocal_85[Global_24686]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_85[Global_24686]))
 					{
-						Global_606F = 0;
+						Global_24687 = 0;
 					}
 					else
 					{
-						Global_606F = 1;
+						Global_24687 = 1;
 					}
 					break;
 				
 				case 2:
-					if (OBJECT::DOES_PICKUP_EXIST(uLocal_22[Global_606E]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_22[Global_606E]))
+					if (OBJECT::DOES_PICKUP_EXIST(uLocal_162[Global_24686]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(uLocal_162[Global_24686]))
 					{
-						Global_606F = 0;
+						Global_24687 = 0;
 					}
 					else
 					{
-						Global_606F = 1;
+						Global_24687 = 1;
 					}
 					break;
 				
 				case 3:
-					Global_606C = 3;
+					Global_24684 = 3;
 					break;
 			}
-			Global_606C = 2;
+			Global_24684 = 2;
 			break;
 		
 		case 2:
 			break;
 		
 		case 3:
-			Global_606E = 0;
-			Global_606F = 0;
-			Global_606C = 0;
+			Global_24686 = 0;
+			Global_24687 = 0;
+			Global_24684 = 0;
 			break;
 	}
 }
@@ -392,19 +392,19 @@ void func_15()//Position - 0x66D
 	func_21();
 	func_20();
 	func_19();
-	if (iLocal_24)
+	if (iLocal_275)
 	{
 		func_18();
 	}
-	if (iLocal_27)
+	if (iLocal_279)
 	{
 		func_17();
 	}
-	if (iLocal_29)
+	if (iLocal_282)
 	{
 		func_16();
 	}
-	bLocal_25 = false;
+	bLocal_276 = false;
 }
 
 void func_16()//Position - 0x6A7
@@ -414,13 +414,13 @@ void func_16()//Position - 0x6A7
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_28[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_280[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_28[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_280[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_29 = 0;
+	iLocal_282 = 0;
 }
 
 void func_17()//Position - 0x6DE
@@ -430,13 +430,13 @@ void func_17()//Position - 0x6DE
 	iVar0 = 0;
 	while (iVar0 < 1)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_26[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_277[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_26[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_277[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_27 = 0;
+	iLocal_279 = 0;
 }
 
 void func_18()//Position - 0x715
@@ -446,13 +446,13 @@ void func_18()//Position - 0x715
 	iVar0 = 0;
 	while (iVar0 < 9)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_23[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_265[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_23[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_265[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_24 = 0;
+	iLocal_275 = 0;
 }
 
 void func_19()//Position - 0x74D
@@ -462,9 +462,9 @@ void func_19()//Position - 0x74D
 	iVar0 = 0;
 	while (iVar0 < 102)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_22[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_162[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_22[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_162[iVar0]);
 		}
 		iVar0++;
 	}
@@ -477,9 +477,9 @@ void func_20()//Position - 0x77F
 	iVar0 = 0;
 	while (iVar0 < 76)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_21[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_85[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_21[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_85[iVar0]);
 		}
 		iVar0++;
 	}
@@ -492,9 +492,9 @@ void func_21()//Position - 0x7B1
 	iVar0 = 0;
 	while (iVar0 < 19)
 	{
-		if (OBJECT::DOES_PICKUP_EXIST(uLocal_20[iVar0]))
+		if (OBJECT::DOES_PICKUP_EXIST(uLocal_65[iVar0]))
 		{
-			OBJECT::REMOVE_PICKUP(uLocal_20[iVar0]);
+			OBJECT::REMOVE_PICKUP(uLocal_65[iVar0]);
 		}
 		iVar0++;
 	}
@@ -517,7 +517,7 @@ void func_22()//Position - 0x7E3
 
 bool func_23(int iParam0)//Position - 0x815
 {
-	return Global_8861 == iParam0;
+	return Global_34913 == iParam0;
 }
 
 void func_24()//Position - 0x823
@@ -526,7 +526,7 @@ void func_24()//Position - 0x823
 	func_33();
 	func_29();
 	func_25();
-	bLocal_25 = true;
+	bLocal_276 = true;
 }
 
 void func_25()//Position - 0x83F
@@ -635,26 +635,26 @@ void func_25()//Position - 0x83F
 	func_26(101, joaat("pickup_weapon_sawnoffshotgun"), 92.8f, 0f, 50.4f, 0, 0, 0);
 }
 
-void func_26(int iParam0, int iParam1, struct<3> Param2, bool bParam3, bool bParam4, bool bParam5)//Position - 0xFBD
+void func_26(int iParam0, int iParam1, struct<3> Param2, bool bParam5, bool bParam6, bool bParam7)//Position - 0xFBD
 {
 	int iVar0;
 	
 	iVar0 = 0;
 	MISC::SET_BIT(&iVar0, 2);
 	MISC::SET_BIT(&iVar0, 1);
-	if (bParam5)
+	if (bParam7)
 	{
 		MISC::SET_BIT(&iVar0, 4);
 	}
-	if (bParam3)
+	if (bParam5)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	uLocal_22[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_28(iParam0, 0), Param2, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_22[iParam0], 600000);
-	if (bParam4)
+	uLocal_162[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(iParam1, func_28(iParam0, 0), Param2, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_162[iParam0], 600000);
+	if (bParam6)
 	{
-		INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME(uLocal_22[iParam0], func_27(iParam0));
+		INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME(uLocal_162[iParam0], func_27(iParam0));
 	}
 }
 
@@ -1482,7 +1482,7 @@ void func_29()//Position - 0x1FDF
 	func_30(75, 0f, 0f, 23.3f, 1, 0);
 }
 
-void func_30(int iParam0, struct<3> Param1, bool bParam2, bool bParam3)//Position - 0x23FF
+void func_30(int iParam0, struct<3> Param1, bool bParam4, bool bParam5)//Position - 0x23FF
 {
 	int iVar0;
 	
@@ -1491,15 +1491,15 @@ void func_30(int iParam0, struct<3> Param1, bool bParam2, bool bParam3)//Positio
 	MISC::SET_BIT(&iVar0, 1);
 	MISC::SET_BIT(&iVar0, 8);
 	MISC::SET_BIT(&iVar0, 4);
-	if (!bParam2)
+	if (!bParam4)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	uLocal_21[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_health_standard"), func_32(iParam0, 0), Param1, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_21[iParam0], 600000);
-	if (bParam3)
+	uLocal_85[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_health_standard"), func_32(iParam0, 0), Param1, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_85[iParam0], 600000);
+	if (bParam5)
 	{
-		INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME(uLocal_21[iParam0], func_31(iParam0));
+		INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME(uLocal_85[iParam0], func_31(iParam0));
 	}
 }
 
@@ -2289,7 +2289,7 @@ void func_33()//Position - 0x333C
 	func_34(18, 0f, 0f, 0f, 1);
 }
 
-void func_34(int iParam0, struct<3> Param1, bool bParam2)//Position - 0x33FA
+void func_34(int iParam0, struct<3> Param1, bool bParam4)//Position - 0x33FA
 {
 	int iVar0;
 	
@@ -2298,12 +2298,12 @@ void func_34(int iParam0, struct<3> Param1, bool bParam2)//Position - 0x33FA
 	MISC::SET_BIT(&iVar0, 4);
 	MISC::SET_BIT(&iVar0, 1);
 	MISC::SET_BIT(&iVar0, 8);
-	if (bParam2)
+	if (bParam4)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
-	uLocal_20[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_weapon_petrolcan"), func_35(iParam0), Param1, iVar0, -1, 2, 1, 0);
-	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_20[iParam0], 600000);
+	uLocal_65[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_weapon_petrolcan"), func_35(iParam0), Param1, iVar0, -1, 2, 1, 0);
+	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_65[iParam0], 600000);
 }
 
 Vector3 func_35(int iParam0)//Position - 0x345B
@@ -2438,7 +2438,7 @@ void func_36()//Position - 0x366E
 	func_37(44, 90f, 0f, -108f, 0, 0, 0);
 }
 
-void func_37(int iParam0, struct<3> Param1, bool bParam2, bool bParam3, bool bParam4)//Position - 0x38FA
+void func_37(int iParam0, struct<3> Param1, bool bParam4, bool bParam5, bool bParam6)//Position - 0x38FA
 {
 	int iVar0;
 	
@@ -2446,17 +2446,17 @@ void func_37(int iParam0, struct<3> Param1, bool bParam2, bool bParam3, bool bPa
 	MISC::SET_BIT(&iVar0, 2);
 	MISC::SET_BIT(&iVar0, 4);
 	MISC::SET_BIT(&iVar0, 1);
-	if (bParam4)
+	if (bParam6)
 	{
 		MISC::SET_BIT(&iVar0, 8);
 	}
-	if (bParam2)
+	if (bParam4)
 	{
 		MISC::SET_BIT(&iVar0, 3);
 	}
 	uLocal_19[iParam0] = OBJECT::CREATE_PICKUP_ROTATE(joaat("pickup_armour_standard"), func_39(iParam0, 0), Param1, iVar0, -1, 2, 1, 0);
 	OBJECT::SET_PICKUP_REGENERATION_TIME(uLocal_19[iParam0], 600000);
-	if (bParam3)
+	if (bParam5)
 	{
 		INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME(uLocal_19[iParam0], func_38(iParam0));
 	}
@@ -2860,15 +2860,15 @@ void func_40()//Position - 0x414F
 	func_21();
 	func_20();
 	func_19();
-	if (iLocal_24)
+	if (iLocal_275)
 	{
 		func_18();
 	}
-	if (iLocal_27)
+	if (iLocal_279)
 	{
 		func_17();
 	}
-	if (iLocal_29)
+	if (iLocal_282)
 	{
 		func_16();
 	}

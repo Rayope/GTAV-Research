@@ -11,7 +11,7 @@ void __EntryFunction__()//Position - 0x0
 		func_10();
 	}
 	STREAMING::SET_GAME_PAUSES_FOR_STREAMING(0);
-	MISC::CLEAR_BIT(&(Global_17C49.f_204E.f_19), 1);
+	MISC::CLEAR_BIT(&(Global_97353.f_8270.f_25), 1);
 	func_7();
 	SCRIPT::SET_NO_LOADING_SCREEN(1);
 	if (!CAM::IS_SCREEN_FADED_OUT())
@@ -34,7 +34,7 @@ void __EntryFunction__()//Position - 0x0
 	while (!CUTSCENE::IS_CUTSCENE_PLAYING())
 	{
 		func_7();
-		if (!MISC::IS_BIT_SET(Global_17C49.f_204E.f_19, 1))
+		if (!MISC::IS_BIT_SET(Global_97353.f_8270.f_25, 1))
 		{
 			GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_0, 255, 255, 255, 255, 0);
 			if (!iLocal_2)
@@ -48,7 +48,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else if (MISC::GET_GAME_TIMER() > iLocal_1)
 			{
-				MISC::SET_BIT(&(Global_17C49.f_204E.f_19), 1);
+				MISC::SET_BIT(&(Global_97353.f_8270.f_25), 1);
 				if (MISC::_0x6FDDF453C0C756EC() || MISC::IS_PC_VERSION())
 				{
 					func_4(1, 1);
@@ -67,7 +67,7 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x13E
 {
-	Global_15F91 = 1;
+	Global_90001 = 1;
 }
 
 int func_2()//Position - 0x14B
@@ -76,18 +76,18 @@ int func_2()//Position - 0x14B
 	{
 		return 0;
 	}
-	if (Global_15F91.f_8)
+	if (Global_90001.f_8)
 	{
-		if (Global_15F91.f_A > 0)
+		if (Global_90001.f_10 > 0)
 		{
 			return 0;
 		}
 	}
-	else if (Global_15F91.f_A > 1)
+	else if (Global_90001.f_10 > 1)
 	{
 		return 0;
 	}
-	Global_15F91.f_A++;
+	Global_90001.f_10++;
 	return 1;
 }
 
@@ -97,13 +97,13 @@ bool func_3(bool bParam0)//Position - 0x196
 	{
 		return 1;
 	}
-	return MISC::IS_BIT_SET(Global_10B8D, 0);
+	return MISC::IS_BIT_SET(Global_68493, 0);
 }
 
 void func_4(int iParam0, int iParam1)//Position - 0x1C1
 {
-	Global_15F91.f_7 = iParam0;
-	Global_15F91.f_8 = iParam1;
+	Global_90001.f_7 = iParam0;
+	Global_90001.f_8 = iParam1;
 }
 
 void func_5(char* sParam0)//Position - 0x1D9
@@ -147,12 +147,12 @@ void func_8()//Position - 0x26E
 
 void func_9()//Position - 0x27E
 {
-	Global_42CA.f_86 = 1;
+	Global_17098.f_134 = 1;
 }
 
 void func_10()//Position - 0x28C
 {
-	MISC::SET_BIT(&(Global_17C49.f_204E.f_19), 1);
+	MISC::SET_BIT(&(Global_97353.f_8270.f_25), 1);
 	if (iLocal_0 != 0)
 	{
 		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_0);
