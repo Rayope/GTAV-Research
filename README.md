@@ -13,7 +13,6 @@ Hopefully nothing awfully wrong is written... If you think so, please tell me!
 # Goals & TODO
 * Gather all ressources I use for GTA V script and game understanding
 * Improve ImGTA mod (helps debugging in game)
-* Link an updated fork of ImGTA (not online yet)
 
 # General information
 OpenIV allows you to extract some game files from the game folder on your computer: scripts, sounds, animations, models, audio files.<br /><br />
