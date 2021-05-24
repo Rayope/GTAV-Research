@@ -208,21 +208,26 @@ bj = Basejump
 stunt_plane_races
 offroad_races
 country_race
-chop
+chop = Franklin activity with Chop
 friendactivity
 stripclub_drinking
 stripclub
 stripperhome
 golf_ai_foursome_putting
 golf_ai_foursome
+range_modern
 
 # Collectibles
-flyunderbridges
-letterscraps
-spaceshipparts
-underwaterpickups
+flyunderbridges = Stunt - Fly Under Bridges and Knife Flights
+letterscraps = Collectible - Letter Scraps
+spaceshipparts = Collectible - Spaceship Parts
+underwaterpickups = Objects you can pickup underwater (money, weapons, health, armour) 
 
 # Setup
+main
+main_install
+main_persistent
+maintransition
 creator
 director_mode
 freemode_init
@@ -248,19 +253,31 @@ startup
 autosave_controller
 code_controller
 context_controller
-mission_repeat_controller
 controller_ambientarea
 controller_races
 controller_taxi
 controller_towing
 controller_trafficking
+_assassin_rankup = Rankup controller for Leseter assassin missions
+
 
 ## Communications
+dialogue_handler
 comms_controller
 cellphone_controller
+cellphone_flashhand
 email_controller
 social_controller
 friends_controller
+
+## Mission
+flow_controller
+mission_repeat_controller
+mission_triggerer_a
+mission_triggerer_b
+mission_triggerer_c
+mission_triggerer_d
+replay_controller
 
 ## Others
 event_controller
@@ -272,13 +289,11 @@ completionpercentage_controller
 country_race_controller
 drunk_controller
 floating_help_controller
-flow_controller
 pickup_controller
 player_controller
 player_controller_b
 rampage_controller
 randomchar_controller
-replay_controller
 respawn_controller
 shop_controller
 stats_controller
@@ -328,6 +343,8 @@ carwash2
 fairgroundhub
 forsalesigns
 laptop_trigger
+ufo
+heli_gun
 
 # Launchers
 launcher_abigail
@@ -366,95 +383,11 @@ bailbond_launcher
 taxilauncher
 emergencycalllauncher
 
-# Multiplayer
-mp_awards
-mp_fm_registration
-mp_menuped
-mp_prop_global_block
-mp_registration
-mp_save_game_global_block
-mp_unlocks
-mp_weapons
-mpstatsinit
-mptestbed
-am_airstrike
-am_ammo_drop
-am_armwrestling
-am_armybase
-am_backup_heli
-am_boat_taxi
-am_bru_box
-am_car_mod_tut
-am_contact_requests
-am_cr_securityvan
-am_crate_drop
-am_darts
-am_destroy_veh
-am_distract_cops
-am_doors
-am_ferriswheel
-am_ga_pickups
-am_gang_call
-am_heist_int
-am_heli_taxi
-am_hold_up
-am_imp_exp
-am_joyrider
-am_launcher
-am_lester_cut
-am_mission_launch
-am_mp_carwash_launch
-am_mp_garage_control
-am_mp_property_ext
-am_mp_property_int
-am_npc_invites
-am_pi_menu
-am_plane_takedown
-am_prison
-am_prostitute
-am_rollercoaster
-am_rontrevor_cut
-am_taxi
-am_vehicle_spawn
-fm_bj_race_controler
-fm_capture_creator
-fm_deathmatch_controler
-fm_deathmatch_creator
-fm_hideout_controler
-fm_hold_up_tut
-fm_horde_controler
-fm_impromptu_dm_controler
-fm_intro_cut_dev
-fm_intro
-fm_lts_creator
-fm_main_menu
-fm_maintain_cloud_header_data
-fm_maintain_transition_players
-fm_mission_controller
-fm_mission_creator
-fm_race_controler
-fm_race_creator
-fmmc_launcher
-fmmc_playlist_controller
-net_bot_brain
-net_bot_simplebrain
-net_cloud_mission_loader
-net_rank_tunable_loader
-net_tunable_check
-clothes_shop_mp
-wardrobe_mp
-tennis_network_mp
-stripclub_mp
-range_modern_mp
-pilot_school_mp
-golf_mp
-hairdo_shop_mp
-tunables_registration
-tuneables_processing
-celebration_editor
-celebrations
-
 # Player scenes
+_af_intro_t_sandy = Intro - Trevor Home
+_sh_intro_f_hills = Intro - Franklin Home
+_sh_intro_m_home = Intro - Michael Home
+player_timetable_scene
 player_scene_f_lamgraff
 player_scene_f_lamtaunt
 player_scene_f_taxi
@@ -474,9 +407,11 @@ family_scene_f1
 family_scene_m
 family_scene_t0
 family_scene_t1
-player_timetable_scene
 
 # Phone apps
+bootycallhandler
+emergencycall
+taxiservice
 appbroadcast
 appcamera
 appchecklist
@@ -584,14 +519,143 @@ hairdo_shop_sp
 carmod_shop
 tattoo_shop
 
+# Unclassified
+lesterhandler
+spawn_activities
+act_cinema
+charactergoals
+mission_stat_watcher
+minigame_stats_tracker
+buddydeathresponse
+buildingsiteambience
+creation_startup
+docks2asubhandler
+drunk
+exile_city_denial
+fake_interiors
+fameorshame_eps_1
+fameorshame_eps
+flow_help
+flowintrotitle
+flowstartaccept
+heist_ctrl_agency
+heist_ctrl_docks
+heist_ctrl_finale
+heist_ctrl_jewel
+heist_ctrl_rural
+luxe_veh_activity
+maude_postbailbond
+mg_race_to_point
+minigame_ending_stinger
+mission_race
+photographymonkey
+photographywildlife
+pickupvehicles
+postkilled_bailbond2
+postrc_barry1and2
+postrc_barry4
+postrc_epsilon4
+postrc_nigel3pilot_school
+sp_menuped
+sp_pilotschool_reg
+tasklist_1
+train_create_widget
+
+
+# The following scripts are very likely of no interest for speedrunning offline
+
 # Mods (Not in original game)
 control_thread
 
+# Multiplayer
+mp_awards
+mp_fm_registration
+mp_menuped
+mp_prop_global_block
+mp_registration
+mp_save_game_global_block
+mp_unlocks
+mp_weapons
+mpstatsinit
+mptestbed
+am_airstrike
+am_ammo_drop
+am_armwrestling
+am_armybase
+am_backup_heli
+am_boat_taxi
+am_bru_box
+am_car_mod_tut
+am_contact_requests
+am_cr_securityvan
+am_crate_drop
+am_darts
+am_destroy_veh
+am_distract_cops
+am_doors
+am_ferriswheel
+am_ga_pickups
+am_gang_call
+am_heist_int
+am_heli_taxi
+am_hold_up
+am_imp_exp
+am_joyrider
+am_launcher
+am_lester_cut
+am_mission_launch
+am_mp_carwash_launch
+am_mp_garage_control
+am_mp_property_ext
+am_mp_property_int
+am_npc_invites
+am_pi_menu
+am_plane_takedown
+am_prison
+am_prostitute
+am_rollercoaster
+am_rontrevor_cut
+am_taxi
+am_vehicle_spawn
+fm_bj_race_controler
+fm_capture_creator
+fm_deathmatch_controler
+fm_deathmatch_creator
+fm_hideout_controler
+fm_hold_up_tut
+fm_horde_controler
+fm_impromptu_dm_controler
+fm_intro_cut_dev
+fm_intro
+fm_lts_creator
+fm_main_menu
+fm_maintain_cloud_header_data
+fm_maintain_transition_players
+fm_mission_controller
+fm_mission_creator
+fm_race_controler
+fm_race_creator
+fmmc_launcher
+fmmc_playlist_controller
+net_bot_brain
+net_bot_simplebrain
+net_cloud_mission_loader
+net_rank_tunable_loader
+net_tunable_check
+clothes_shop_mp
+wardrobe_mp
+tennis_network_mp
+stripclub_mp
+range_modern_mp
+pilot_school_mp
+golf_mp
+hairdo_shop_mp
+tunables_registration
+tuneables_processing
+celebration_editor
+celebrations
+
 # Misc (Lots of script files here are empty as they probably couldn't be decompiled properly)
-main
-main_install
-main_persistent
-maintransition
 benchmark
 cutscenemetrics
 cutscenesamples
@@ -635,81 +699,22 @@ shot_bikejump
 heli_streaming
 sp_dlc_registration
 sp_editor_mission_instance
-
-
-# Unclassified
-cellphone_flashhand
-dialogue_handler
-bootycallhandler
-lesterhandler
-ufo
-spawn_activities
-emergencycall
-taxiservice
-taxitutorial
-act_cinema
-assassin_rankup
-charactergoals
-buddydeathresponse
-af_intro_t_sandy
-bugstar_mission_export
-buildingsiteambience
-creation_startup
-docks2asubhandler
-drunk
-exile_city_denial
-fake_interiors
-fame_or_shame_set
-fameorshame_eps_1
-fameorshame_eps
-flow_help
-flowintrotitle
-flowstartaccept
-heist_ctrl_agency
-heist_ctrl_docks
-heist_ctrl_finale
-heist_ctrl_jewel
-heist_ctrl_rural
-heli_gun
 liverecorder
-luxe_veh_activity
-maude_postbailbond
-mg_race_to_point
-minigame_ending_stinger
-minigame_stats_tracker
-mission_race
-mission_stat_alerter
-mission_stat_watcher
-mission_triggerer_a
-mission_triggerer_b
-mission_triggerer_c
-mission_triggerer_d
-paradise2
-paradise
-photographymonkey
-photographywildlife
-pickupvehicles
-placeholdermission
-playthrough_builder
-postkilled_bailbond2
-postrc_barry1and2
-postrc_barry4
-postrc_epsilon4
-postrc_nigel3pilot_school
-range_modern
 sc_lb_global_block
-scriptplayground
-_sh_intro_f_hills = Intro - Franklin Home
-_sh_intro_m_home = Intro - Michael Home
-shooting_camera
-sp_menuped
-sp_pilotschool_reg
 spmc_instancer
 spmc_preloader
-tasklist_1
+shooting_camera
+scriptplayground
+playthrough_builder
 traffickingsettings
 traffickingteleport
-train_create_widget
+taxitutorial
+mission_stat_alerter
+bugstar_mission_export
+fame_or_shame_set
+paradise2
+paradise
+placeholdermission
 
 # Tests
 aicover_test
