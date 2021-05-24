@@ -89,7 +89,7 @@ finale_heist_prepb
 finale_heist_prepd
 finale_heist_prepeamb
 
-# Optional missions
+# Side missions
 _drf1 = Chaos
 _drf2 = Evil
 _drf3 = Negativity
@@ -102,6 +102,20 @@ _me_jimmy1 - Parenting 101
 _me_tracey1 - Doting Dad
 selling_short_1
 selling_short_2
+shrinkletter
+altruist_cult
+towing
+taxi_clowncar
+taxi_cutyouin
+taxi_deadline
+taxi_followcar
+taxi_gotyounow
+taxi_gotyourback
+taxi_needexcitement
+taxi_procedural
+taxi_takeiteasy
+taxi_taketobest
+shoprobberies
 
 # Freaks
 tonya1 = Pulling Favours
@@ -201,6 +215,33 @@ stripclub
 stripperhome
 golf_ai_foursome_putting
 golf_ai_foursome
+
+# Collectibles
+flyunderbridges
+letterscraps
+spaceshipparts
+underwaterpickups
+
+# Setup
+creator
+director_mode
+freemode_init
+freemode
+ingamehud
+initial
+pi_menu
+restrictedareas
+save_anywhere
+savegame_bed
+timershud
+scripted_cam_editor
+selector_example
+selector
+standard_global_init
+standard_global_reg
+startup_install
+startup_positioning
+startup
 
 # Controllers
 ## Main
@@ -322,6 +363,8 @@ launcher_tonya
 launcher_triathlon
 launcher_yoga
 bailbond_launcher
+taxilauncher
+emergencycalllauncher
 
 # Multiplayer
 mp_awards
@@ -544,7 +587,7 @@ tattoo_shop
 # Mods (Not in original game)
 control_thread
 
-# Misc (Lots of script files here are empty)
+# Misc (Lots of script files here are empty as they probably couldn't be decompiled properly)
 main
 main_install
 main_persistent
@@ -594,38 +637,17 @@ sp_dlc_registration
 sp_editor_mission_instance
 
 
-# Unclassed
+# Unclassified
 cellphone_flashhand
 dialogue_handler
 bootycallhandler
-flyunderbridges
-letterscraps
-spaceshipparts
-shrinkletter
-underwaterpickups
-freemode_init
-freemode
 lesterhandler
 ufo
-towing
 spawn_activities
 emergencycall
-emergencycalllauncher
-taxi_clowncar
-taxi_cutyouin
-taxi_deadline
-taxi_followcar
-taxi_gotyounow
-taxi_gotyourback
-taxi_needexcitement
-taxi_procedural
-taxi_takeiteasy
-taxi_taketobest
-taxilauncher
 taxiservice
 taxitutorial
 act_cinema
-altruist_cult
 assassin_rankup
 charactergoals
 buddydeathresponse
@@ -633,8 +655,6 @@ af_intro_t_sandy
 bugstar_mission_export
 buildingsiteambience
 creation_startup
-creator
-director_mode
 docks2asubhandler
 drunk
 exile_city_denial
@@ -651,8 +671,6 @@ heist_ctrl_finale
 heist_ctrl_jewel
 heist_ctrl_rural
 heli_gun
-ingamehud
-initial
 liverecorder
 luxe_veh_activity
 maude_postbailbond
@@ -670,7 +688,6 @@ paradise2
 paradise
 photographymonkey
 photographywildlife
-pi_menu
 pickupvehicles
 placeholdermission
 playthrough_builder
@@ -680,29 +697,16 @@ postrc_barry4
 postrc_epsilon4
 postrc_nigel3pilot_school
 range_modern
-restrictedareas
-save_anywhere
-savegame_bed
 sc_lb_global_block
-scripted_cam_editor
 scriptplayground
-selector_example
-selector
 _sh_intro_f_hills = Intro - Franklin Home
 _sh_intro_m_home = Intro - Michael Home
 shooting_camera
-shoprobberies
 sp_menuped
 sp_pilotschool_reg
 spmc_instancer
 spmc_preloader
-standard_global_init
-standard_global_reg
-startup_install
-startup_positioning
-startup
 tasklist_1
-timershud
 traffickingsettings
 traffickingteleport
 train_create_widget
