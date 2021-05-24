@@ -117,7 +117,7 @@ taxi_takeiteasy
 taxi_taketobest
 shoprobberies
 
-# Freaks
+# Strangers and Freaks
 tonya1 = Pulling Favours
 tonya2 = Pulling Another Favour
 tonya3 = Pulling Favours Again
@@ -138,7 +138,7 @@ _barry3 = Grass Roots - Franklin
 barry3a = Grass Roots - The Pickup
 _barry3c = Grass Roots - The Drag
 barry4 = Grass Roots - The Smoke-in
-maude1
+_maude1 = Special Bonds
 _bailbond1 = Ralph Ostrowski
 _bailbond2 = Larry Tupper
 _bailbond3 = Glenn Scoville
@@ -215,7 +215,7 @@ stripclub
 stripperhome
 golf_ai_foursome_putting
 golf_ai_foursome
-range_modern
+_range_modern = Shooting Range
 
 # Collectibles
 flyunderbridges = Stunt - Fly Under Bridges and Knife Flights
@@ -240,13 +240,15 @@ save_anywhere
 savegame_bed
 timershud
 scripted_cam_editor
-selector_example
 selector
 standard_global_init
 standard_global_reg
 startup_install
 startup_positioning
 startup
+charactergoals
+mission_stat_watcher
+minigame_stats_tracker
 
 # Controllers
 ## Main
@@ -301,8 +303,6 @@ stock_controller
 vehicle_gen_controller
 cheat_controller
 achievement_controller
-bootycall_debug_controller
-friends_debug_controller
 
 # Objects
 ob_abatdoor
@@ -432,7 +432,7 @@ apptrackify
 appvlsi
 appzit
 
-# Special peds
+# Special peds (soapboxers)
 gpb_andymoon = Andy Moon
 gpb_baygor = Baygor
 gpb_billbinder = Bill Binder
@@ -450,7 +450,7 @@ gpb_zombie = Graham
 pb_busker = Busker
 pb_homeless = Homeless
 pb_preacher = Preacher
-pb_prostitute = Prostiture
+pb_prostitute = Prostitute
 sclub_front_bouncer = Stripclub Front Bouncer
 
 # Ambient missions (No mission-like start/stop, done in freemode)
@@ -506,11 +506,11 @@ re_shoprobbery
 re_snatched
 re_stag_do
 re_yetarian
-pm_defend
-pm_delivery
-pm_gang_attack
-pm_plane_promotion
-pm_recover_stolen
+pm_defend = Property Management - Defend
+pm_delivery = Property Management - Delivery
+pm_gang_attack = Property Management - Gang Attack
+pm_plane_promotion = Property Management - Plane Promotion
+pm_recover_stolen = Property Management - Recover Stolen
 
 # Shops
 gunclub_shop
@@ -523,9 +523,6 @@ tattoo_shop
 lesterhandler
 spawn_activities
 act_cinema
-charactergoals
-mission_stat_watcher
-minigame_stats_tracker
 buddydeathresponse
 buildingsiteambience
 creation_startup
@@ -715,6 +712,9 @@ fame_or_shame_set
 paradise2
 paradise
 placeholdermission
+bootycall_debug_controller
+friends_debug_controller
+selector_example
 
 # Tests
 aicover_test
