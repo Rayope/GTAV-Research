@@ -230,8 +230,6 @@ main_persistent
 maintransition
 creator
 director_mode
-freemode_init
-freemode
 ingamehud
 initial
 pi_menu
@@ -524,14 +522,10 @@ lesterhandler
 spawn_activities
 act_cinema
 buddydeathresponse
-buildingsiteambience
-creation_startup
-docks2asubhandler
 drunk
+buildingsiteambience
+docks2asubhandler
 exile_city_denial
-fake_interiors
-fameorshame_eps_1
-fameorshame_eps
 flow_help
 flowintrotitle
 flowstartaccept
@@ -542,8 +536,6 @@ heist_ctrl_jewel
 heist_ctrl_rural
 luxe_veh_activity
 maude_postbailbond
-mg_race_to_point
-minigame_ending_stinger
 mission_race
 photographymonkey
 photographywildlife
@@ -558,6 +550,11 @@ sp_pilotschool_reg
 tasklist_1
 train_create_widget
 
+creation_startup
+fameorshame_eps_1
+fameorshame_eps
+minigame_ending_stinger
+
 
 # The following scripts are very likely of no interest for speedrunning offline
 
@@ -565,6 +562,8 @@ train_create_widget
 control_thread
 
 # Multiplayer
+freemode_init
+freemode
 mp_awards
 mp_fm_registration
 mp_menuped
@@ -651,6 +650,8 @@ tunables_registration
 tuneables_processing
 celebration_editor
 celebrations
+mg_race_to_point
+fake_interiors
 
 # Misc (Lots of script files here are empty as they probably couldn't be decompiled properly)
 benchmark
