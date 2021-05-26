@@ -1,4 +1,7 @@
-Note: All lines starting with '_' are not verified.
+Notes:
+- All lines starting with '_' are not verified.
+- Categories are not perfect...
+
 
 # Missions
 prologue1 = Prologue
@@ -258,7 +261,7 @@ controller_races
 controller_taxi
 controller_towing
 controller_trafficking
-_assassin_rankup = Rankup controller for Leseter assassin missions
+_assassin_rankup = Rankup controller for Lester assassin missions
 
 
 ## Communications
