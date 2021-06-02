@@ -1,4 +1,4 @@
-In development... it's going to be messy for a few days probably. Come back in a few days!
+In development... Most of the work goes onto [ImGTA](https://github.com/Rayope/ImGTA)
 
 # GTA V Script Documentation and 'Game Research'
 The main goal is to find new speedrunning strategies and understand them better.
@@ -54,7 +54,8 @@ In order to get the memory address of a variable, you need to know the value in 
 
 # Useful Links
 ## Repositories
-GTA V Mod to help debugging: https://github.com/drunderscore/ImGTA<br />
+ImGTA: Original GTA V Mod to help debugging: https://github.com/drunderscore/ImGTA<br />
+ImGTA: Updated version I'm currently updating: https://github.com/Rayope/ImGTA<br />
 Script Decompiler: https://github.com/njames93/GTA-V-Script-Decompiler<br />
 Batch Script Decompiler: https://github.com/Sainan/GTA-V-Script-Decompiler<br />
 Decompiled scripts for last version: https://github.com/Sainan/GTA-V-Decompiled-Scripts<br />
