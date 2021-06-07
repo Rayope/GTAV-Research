@@ -85,6 +85,7 @@ Hex/float conversion: https://gregstoll.com/~gregstoll/floattohex/<br />
 Hex calculator: https://www.calculator.net/hex-calculator.html<br />
 
 ## Communities
-https://www.speedrun.com/gtav (discord link, forum)<br />
-https://forums.gta5-mods.com/<br />
-https://gtaforums.com/forum/371-documentation/<br />
+Speedrun strats: https://www.speedrun.com/gtav (discord link, forum)<br />
+Mod dev 1: https://gtaforums.com/forum/371-documentation/<br />
+Mod dev 2: https://forums.gta5-mods.com/<br />
+More focus on GTA V reverse engineering: https://www.unknowncheats.me/forum/grand-theft-auto-v/<br />
