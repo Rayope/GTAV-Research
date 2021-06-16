@@ -16,9 +16,9 @@ Hopefully nothing awfully wrong is written... If you think so, please tell me!
 
 # General information
 OpenIV allows you to extract some game files from the game folder on your computer: scripts, sounds, animations, models, audio files.<br /><br />
-A script decompiler allows you to transform the script extracted from openIV (two files: [script_name].ysc.full, [script_name].ysc.sys) from binary data (assembly) to a source file (language .NET probably) that you can read.<br />
+A script decompiler allows you to transform the script extracted from openIV (two files: [script_name].ysc.full, [script_name].ysc.sys) from binary data (assembly) to a source file (pseudocode) that you can read.<br />
 During this transformation the decompiler can translate some entities and functions names from a hash to the readable name if it knows the corresponding name. The function names are called natives.<br /><br />
-Native hashes are not the same for every version of the game. But, we somehow have the corresponding hashes for every version (look at native hash update repository below).<br />
+Native hashes are not the same for every version of the game. You can find the corresponding hashes for every version in the "native hash update" repository (linked below).<br />
 The version of the game is the build number that you see in the bottom right corner when you start the game.<br />
 The speedrunning community has chosen the version 372 -- which corresponds to the PC version GTA V 1.27 -- because it is faster than other versions (load times, no wave, and maybe more).<br />
 
@@ -27,7 +27,7 @@ I could be wrong here, but from what I read on forums, discord and whatnot, here
 The following is only for natives (function names) because I think there are differences for other string entities.<br />
 Note: A hash function converts one value to another. For instance, the joaat hash algorithm: jooat("my_function_name") = 0xD62711A5<br /><br />
 The original game version (XBox version), build number 331, had hashes computed using Jenkins one-at-a-time (joaat) algorithm, which outputs a 32-bit hash (e.g., 0xD6 27 11 A5). Then, the other versions used another algorithm (unknown as far as I know) that outputs a 64-bit hash (e.g., 0xD5 B9 60 AA 31 EA F4 08).<br />
-Somehow, people made lists with corresponding hashes between each version, so that from whatever version of the game you have a hash, you can match it with the original 32-bit hash from the XBox version. And the name corresponding to that 32-bit hash can be found by bruteforcing it with the joaat algorithm.<br />
+You can find corresponding hashes from two different versions (need to disassemble GTAV.exe from both version and search for the natives array) and make a crossmap. However, people have already made lists with corresponding hashes between each version ("native hash update" repository in the links below), so that from whatever version of the game you have a hash, you can match it with the original 32-bit hash from the XBox version. And the name corresponding to that 32-bit hash can be found by bruteforcing it with the joaat algorithm.<br />
 A lot of hashes have already been found, have a look at native databases in 'Ressources' below.
 
 # Jenkins one-at-a-time (joaat) algorithm
@@ -36,19 +36,19 @@ It will find multiple matching strings for your hash... which is normal because 
 
 # Mod information
 By default, GTA V does not allow modding the game, but a library named ScriptHookV (https://www.dev-c.com/gtav/scripthookv/) does!<br />
-It loads ASI plugins (.asi mods) made in C++. And, ScriptHookVDotNet is an ASI plugin that can load .dll mods made in .NET.<br />
+It loads ASI plugins (.asi mods) made in C++. And, ScriptHookVDotNet is an ASI plugin that can load .dll mods made in C# (.NET).<br />
 So, there are two types of mod files: .asi and .dll.<br />
 
 File structure:
 * **GTAV/[ScriptHookV_files]**: ScriptHookV files in GTA V folder
 * **GTAV/[ASI_mod.asi]**: .asi mods (made in C++) in GTA V folder
 * [optional] **GTAV/[ScriptHookVDotNet_files]**: ScriptHookVDotNet files in GTA V folder
-* [optional] **GTAV/scripts/[DLL_mod.dll]**: .dll mods (made in .NET) in a folder named "scripts" inside the GTA V folder
+* [optional] **GTAV/scripts/[DLL_mod.dll]**: .dll mods (made with .NET) in a folder named "scripts" inside the GTA V folder
 
-You can reload mods ingame with 'Ctrl-R'.<br />
+You can reload mods ingame with 'Ctrl-R' (bug in some versions).<br />
 
 # Cheat engine
-'Cheat engine' is a program that attaches itself to GTA V -- any program really --, it is used for watching the program memory and interacting with it.<br />
+'Cheat engine' is a program that attaches itself to GTA V -- any program really --, it is used for watching the program memory and interacting with it... it has debugger functionalities as well.<br />
 I used it for looking at specific value within GTA V, like "Franklin", or a value that you want to know the location within the game...<br />
 In order to get the memory address of a variable, you need to know the value in game and you have to be able to make it change within the game so that you can find the only (or a few) values that changes as expected within Cheat engine (with multiple consecutive searches).
 
